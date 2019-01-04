@@ -1,16 +1,79 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Main Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<link href="index.css" rel="stylesheet">
+<style>
+ul, #myUL {
+  list-style-type: none;
+}
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <title>Main Website</title>
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+</style>
 </head>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li><a href="studies.html" style="width: 200px;">Studies</a></li>
-      <li><a href="projects.html" style="width: 200px;">Projects</a></li>
-      <li><a href="work.html" style="width: 200px;">Work</a></li>
+
+<body>
+
+<h1>
+    <a href="index.html" class="btn"> Home</a>
+</h1>
+
+<h2>
+<ul id="myUL">
+  <li><span class="caret">statml</span>
+    <ul class="nested">
+      <li><a href="statistics.html">statistics</a></li>
+      <li><a href="mathfi.html">mathfinance</a></li>
     </ul>
-  </div>
-</nav>
+  </li>
+</ul>
+</h2>
+
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+
+</body>
+</html>
