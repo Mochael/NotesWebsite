@@ -48,52 +48,14 @@ canvas{
   vertical-align:bottom;
 }
 
-
-/* ---- stats.js ---- */
-
-.count-particles{
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13E8E9;
-  font-size: .8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles{
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles{
-  -webkit-user-select: none;
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-#stats{
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles{
-  border-radius: 0 0 3px 3px;
-}
-
-
 /* ---- particles.js container ---- */
 
 #particles-js{
+  position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #b61924;
+  z-index: -1;
+  background-color: #4CAF50;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -111,9 +73,13 @@ canvas{
   <a href="reviews.html">Reviews</a>
 </div>
 
-<div id="particles-js">
 
-		<div class="container">
+<!-- particles.js container -->
+<div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
+  <!-- scripts -->
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+
 			<img src="myPic.jpg" class="center" width="300" height="300">
 			<div>
 				<h2>Hello!</h2>
@@ -135,43 +101,7 @@ canvas{
           I also like to be involved in the CMU community where I am on the Joint Funding Committee, and I volunteer to mentor students about financial literacy for the Moneythink Group.
 				</p>
 			</div><!-- end main-text-->
-    </div><!--end container-->
   </div>
 
-
-  <!-- count particles -->
-<div class="count-particles">
-  <span class="js-count-particles">--</span> particles
-</div>
-
-<!-- particles.js container -->
-<div id="particles-js"></div>
-
-<!-- scripts -->
-<script src="particles.js"></script>
-<script src="app.js"></script>
-
-<!-- stats.js -->
-<script src="stats.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
-
-	</body>
+</body>
 </html>
