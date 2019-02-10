@@ -41,6 +41,11 @@ body {
   top: 10px;
 }
 
+#particles-js{
+  background:firebrick;
+  height:400px;
+}
+
 </style>
 </head>
 <body>
@@ -52,6 +57,7 @@ body {
   <a href="reviews.html">Reviews</a>
 </div>
 
+<div id="particles-js">
 
 		<div class="container">
 			<img src="myPic.jpg" class="center" width="300" height="300">
@@ -75,6 +81,17 @@ body {
           I also like to be involved in the CMU community where I am on the Joint Funding Committee, and I volunteer to mentor students about financial literacy for the Moneythink Group.
 				</p>
 			</div><!-- end main-text-->
-		</div><!--end container-->
+    </div><!--end container-->
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function(){
+      console.log('particles.json loaded...');
+    });
+  </script>
+  
 	</body>
 </html>
