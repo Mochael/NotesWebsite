@@ -6,10 +6,34 @@
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
 <link href="index.css" rel="stylesheet">
 <style>
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 ul, #myUL {
@@ -31,7 +55,7 @@ ul, #myUL {
 
 .caret::before {
   content: "\25B6";
-  color: black;
+  color: white;
   display: inline-block;
   margin-right: 6px;
 }
@@ -52,7 +76,7 @@ ul, #myUL {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #2D2E2D;
 }
 
 .topnav a {
@@ -79,7 +103,7 @@ ul, #myUL {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #4CAF50;
+  background-color: #2D2E2D;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -140,12 +164,12 @@ ul, #myUL {
 
 </style>
 </head>
-
+<body>
 <div class="topnav">
     <a href="index.html">Home</a>
     <a class="active" href="notes.html">Notes</a>
     <a href="resume.pdf">Resume</a>
-    <a href="reviews.html">Reviews</a>
+    <a href="projects.html">Projects</a>
 </div>
 
 <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
@@ -155,11 +179,12 @@ ul, #myUL {
 
 <div class="animation-target">
 <h1>
-<ul id="myUL">
-  <li><span class="caret">statml</span>
+<ul id="myUL" style="margin-left: 25px;">
+  <li><span class="caret">Statistics and Machine Learning</span>
     <ul class="nested">
-      <li><a href="statistics.html">statistics</a></li>
-      <li><a href="mathfi.html">mathfinance</a></li>
+      <li style="color: white;"><a href="statistics.html">Statistics</a></li>
+      <li style="color: white;"><a href="compsci.html">Computer Science</a></li>
+      <li style="color: white;"><a href="mathfi.html">Mathematical finance</a></li>
     </ul>
   </li>
 </ul>
