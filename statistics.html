@@ -2,17 +2,36 @@
 <head>
     <title>Main Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+<style>
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #2D2E2D;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #2D2E2D;
 }
 
 .topnav a {
@@ -33,51 +52,136 @@ body {
   background-color: #4CAF50;
   color: white;
 }
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    text-transform: none;
+    outline: 0 none;
+    background: none;
+    color: #ffffff;
+    font-size: 50px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn:hover {
+    background: none;
+    color: #4CAF50;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 </style>
 </head>
 <body>
 
-<div class="topnav">
+<div class="topnav sticky-top">
   <a href="index.html">Home</a>
   <a class="active" href="notes.html">Notes</a>
   <a href="resume.pdf">Resume</a>
   <a href="projects.html">Projects</a>
 </div>
 
-<h1>
-  Modern Regression Notes
-</h1>
-<ul class="pagination">
-  <li><a href="notes/stats/36-401/01_prediction_basics.pdf">Prediction Basics</a></li>
-  <li><a href="notes/stats/36-401/02 modeling intro.pdf">Modeling Intro</a></li>
-  <li><a href="notes/stats/36-401/03 simple linear regression.pdf">Simple Linear Regression</a></li>
-  <li><a href="notes/stats/36-401/04 least-squares.pdf">Least Squares</a></li>
-  <li><a href="notes/stats/36-401/05 mle.pdf">Maximum Likelihood Estimator</a></li>
-  <li><a href="notes/stats/36-401/06 diagnostics.pdf">Diagnostics</a></li>
-  <li><a href="notes/stats/36-401/07 inference.pdf">Inference</a></li>
-  <li><a href="notes/stats/36-401/08 predictive inf.pdf">Predictive Inference</a></li>
-  <li><a href="notes/stats/36-401/09 anova.pdf">Anova</a></li>
-  <li><a href="notes/stats/36-401/10 matrix.pdf">Matrices with Regression</a></li>
-  <li><a href="notes/stats/36-401/11 multiple reg.pdf">Multiple Regression</a></li>
-  <li><a href="notes/stats/36-401/12 diagnostics & inference.pdf">Diagnostics and Inference</a></li>
-  <li><a href="notes/stats/36-401/13 poly-cat.pdf">Polynomial and Categorical Regression</a></li>
-  <li><a href="notes/stats/36-401/14 interactions.pdf">Interactions</a></li>
-  <li><a href="notes/stats/36-401/15 model-selection.pdf">Model Selection</a></li>
-  <li><a href="notes/stats/36-401/16 collinearity & outliers.pdf">Collinearity and Outliers</a></li>
-  <li><a href="notes/stats/36-401/17 agnostic regression.pdf">Agnostic Regression</a></li>
-  <li><a href="notes/stats/36-401/18 high-dim regression.pdf">Higher Dimension Regression</a></li>
-  <li><a href="notes/stats/36-401/19 nonparametric.pdf">Nonparametric Modeling</a></li>
-  <li><a href="notes/stats/36-401/20 causality.pdf">Causality</a></li>
-</ul>
-
-<h1>
-  Intro to Machine Learning Notes
-</h1>
-<ul class="pagination">
-  <li><a href="notes/stats/10-701/Lecture_1.pdf">Intro</a></li>
-  <li><a href="notes/stats/10-701/Lecture_2.pdf">MLE, MAP, and Probability Review</a></li>
-  <li><a href="notes/stats/10-701/Lecture_3.pdf">Classification, Bayes Decision Rule, kNN</a></li>
-</ul>
+<div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+    AOS.init();
+</script>
+<div data-aos="fade-up" data-aos-duration="2000">
+<div class="panel-group" id="accordion" style ="padding-top: 20px;">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Modern Regression Notes</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/01_prediction_basics.pdf">Prediction Basics</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/02 modeling intro.pdf">Modeling Intro</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/03 simple linear regression.pdf">Simple Linear Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/03 simple linear regression.pdf">Simple Linear Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/04 least-squares.pdf">Least Squares</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/05 mle.pdf">Maximum Likelihood Estimator</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/06 diagnostics.pdf">Diagnostics</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/07 inference.pdf">Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/08 predictive inf.pdf">Predictive Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/09 anova.pdf">Anova</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/10 matrix.pdf">Matrices with Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/11 multiple reg.pdf">Multiple Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/12 diagnostics & inference.pdf">Diagnostics and Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/13 poly-cat.pdf">Polynomial and Categorical Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/14 interactions.pdf">Interactions</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/15 model-selection.pdf">Model Selection</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/16 collinearity & outliers.pdf">Collinearity and Outliers</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/17 agnostic regression.pdf">Agnostic Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/18 high-dim regression.pdf">Higher Dimension Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/19 nonparametric.pdf">Nonparametric Modeling</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/20 causality.pdf">Causality</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Intro to Machine Learning Notes</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Lecture_1.pdf">Intro</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Lecture_2.pdf">MLE, MAP, and Probability Review</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Lecture_3.pdf">Classification, Bayes Decision Rule, kNN</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+          Data Mining</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
