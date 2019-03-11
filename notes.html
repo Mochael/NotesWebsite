@@ -29,6 +29,13 @@ a:link {
   text-decoration: none;
 }
 
+ul.a {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+  font-size: 30px;
+}
+
 a:visited {
   color: white;
   background-color: transparent;
@@ -92,7 +99,8 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #2D2E2D;
+  background-color: black;
+  /*2D2E2D*/
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -137,9 +145,79 @@ body {
   AOS.init();
 </script>
 <div data-aos="fade-up" data-aos-duration="2000">
-  <div class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="margin-left: 25px; margin-right: 25px; padding-top: 75px;">
-    Statistics and Machine Learning
+  <div class="panel-group" id="accordion" style ="padding-top: 75px;">
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Statistics</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <ul class="a">
+            <li>I have almost finished taking all the necessary statistics classes to earn my bachelors of science in statistics and machine learning at CMU. 
+              The most interesting and rigorous mathematical statistics class that I have taken has been Intro to Machine Learning. 
+              I think that Advanced Data Analytics has been one of the most interesting and useful classes.
+            </li>
+            <li><a href="statistics.html">Statistics Notes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Computer Science</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <ul class="a">
+            <li>I have taken computer science classes that are a part of the statistics and machine leearning cirriculum. 
+              These include Fundamentals of Programming and Computer Science which was centered around programming and C and data structures. </li>
+            <li><a href="compsci.html">Computer Science Notes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+           Computational Finance</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <ul class="a">
+            <li>I am currently taking Introduction to Mathematical Finance which is a good for learning about replication in pricing.</li>
+            <li><a href="compsci.html">Computational Finance Notes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+             Electrical Engineering</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+          <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+            <ul class="a">
+              <li>I have taken introduction to electrical engineering which was very interesting to learn about circuits in great detail.</li>
+              <li><a href="compsci.html">Electrical Engineering Notes</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
   </div>
+</div>
   <div class="collapse" id="collapseExample" style="margin-left: 25px; margin-right: 25px;">
       <li style="color: white; font-size: 25px;"><a href="statistics.html">Statistics</a></li>
       <li style="color: white; font-size: 25px;"><a href="compsci.html">Computer Science</a></li>
