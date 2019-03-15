@@ -78,6 +78,7 @@ body {
 .btn:hover {
     background: none;
     color: #4CAF50;
+    font-weight: bold;
 }
 
 a:link {
@@ -118,6 +119,28 @@ a:active {
 <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
 <script src="particles.js"></script>
 <script src="app.js"></script>
+<script>
+    AOS.init();
+</script>
+<div data-aos="fade-up" data-aos-duration="2000">
+<div class="panel-group" id="accordion" style ="padding-top: 75px;">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Intro to Math Finance Notes</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi1.pdf">Replication and No Arbitrage Pricing</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi2.pdf">Fixed Income Securities and Interest Rates</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi3.pdf">Forward Contracts and Put/Call Options</a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
