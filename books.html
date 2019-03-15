@@ -1,0 +1,329 @@
+<html>
+<head>
+<title>Main Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="index.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.topnav {
+  background-color: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    text-transform: none;
+    outline: 0 none;
+    background: none;
+    color: #ffffff;
+    font-size: 50px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn:hover {
+    background: none;
+    color: #4CAF50;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  /*2D2E2D*/
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.fa {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: white;
+}
+
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text {
+  float: left;
+  width: 99.9%;
+  padding-right: 100px;
+  
+}
+
+.images {
+  float: left;
+  width: .1%;
+  padding-bottom: 20px;
+}
+
+</style>
+  </head>
+  <body>
+  
+  <div class="topnav sticky-top">
+    <a href="index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="resume.pdf">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a class="active" href="books.html">Books</a>
+  </div>
+
+  <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+    AOS.init();
+</script>
+<div data-aos="fade-up" data-aos-duration="2000">
+<div class="panel-group" id="accordion" style ="padding-top: 75px;">
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+            Leonardo da Vinci (Walter Isaacson)</a>
+            <a href="https://www.amazon.com/Leonardo-Vinci-Walter-Isaacson/dp/1501139150" class="fa fa-amazon"></a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+              <div class="group">
+                  <div class="text">
+                      This was a good book.
+                  </div>
+                  <div class="images">
+                      
+                  </div>
+                </div>
+          </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+            Thinking, Fast and Slow (Daniel Kahneman)</a>
+            <a href="https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555/" class="fa fa-amazon"></a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+              <div class="group">
+                  <div class="text">
+                    This was a good book.
+                  </div>
+                  <div class="images">
+                      
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+              How not to be Wrong (Jordan Ellenberg)</a>
+              <a href="https://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535" class="fa fa-amazon"></a>
+            </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    <div class="text">
+                        This was a good book.
+                    </div>
+                    <div class="images">
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+                Homo Deus: A Brief History of Tomorrow (Yuval Noah Harari)</a>
+            <a href="https://www.amazon.com/Homo-Deus-Brief-History-Tomorrow/dp/0062464310" class="fa fa-amazon"></a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+              <div class="group">
+                  <div class="text">
+                    This was a good book.
+                  </div>
+                  <div class="images">
+                      
+                  </div>
+                </div>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+                Sapiens: A Brief History of Humankind (Yuval Noah Harari)</a>
+            <a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316117" class="fa fa-amazon"></a>
+        </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    <div class="text">
+                        This was a good book.
+                    </div>
+                    <div class="images">
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+            A Confession (Leo Tolstoy)</a>
+            <a href="https://www.amazon.com/Confession-Dover-Books-Western-Philosophy-ebook/dp/B00A62YN0A/" class="fa fa-amazon"></a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    <div class="text">
+                        This was a good book.
+                    </div>
+                    <div class="images">
+                        
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+            GRIT (Angela Duckworth)</a>
+            <a href="https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116" class="fa fa-amazon"></a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+              <div class="group">
+                  <div class="text">
+                    This was a good book.
+                  </div>
+                  <div class="images">
+                      
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 40px;">
+            Shoe Dog (Phil Knight)</a>
+            <a href="https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135929" class="fa fa-amazon"></a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+            <div class="group">
+                <div class="text">
+                    This was a good book.
+                </div>
+                <div class="images">
+
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
