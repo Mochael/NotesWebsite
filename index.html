@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="JQueryUI.css">
 <style>
 
 .fa {
@@ -56,6 +56,7 @@ div.main
   transition : all .4s;
   -webkit-transition : all .4s;
   -moz-transition : all .4;
+  position: relative;
   
 }
 
@@ -63,11 +64,6 @@ p {
   display:none;
   font-size: 30;
   opacity: 0;
-}
-
-div.main:hover{
-  opacity: 0.7;
-  color: #4CAF50;
 }
 
 body {
@@ -151,8 +147,9 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 43%;
+	margin-right: 43%;
+  
 }
 
 .img img {
@@ -228,6 +225,63 @@ body {
 
 
 
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+.animated {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}
+
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-300px);
+  }
+  }
+
+  @keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  }
+
+.fadeOutUp {
+-webkit-animation-name: fadeOutUp;
+animation-name: fadeOutUp;
+}
+
+.animateIn {
+  animation: fadeIn 2s steps(10);
+}
+
+.animateOut {
+  animation: fadeIn 2s steps(100);
+}
+
+
 #container {
 	text-align: center;
 }
@@ -285,21 +339,26 @@ body {
         element.style.opacity = "0"; 
         element.style.display = "block"; 
         var op = 0.1;  // initial opacity
+        var pos = 0;
         var timer = setInterval(function () {
             if (op >= 1){
                 clearInterval(timer);
             }
             element.style.opacity = op;
+            element.style.top = pos + 'px';
+            pos++;
             op += 0.1;
         }, 100);
       }
 
-      function fadeOutAndfadeIn(origObj1, origObj2, obj1, obj2){
+      function fadeOutAndfadeIn(origObj1, origObj15, origObj2, obj1, obj2){
       var opacity = 1;
+      var pos = origObj1.style.top;
       var timer = setInterval(function(){
         if(opacity < 0.1){
           clearInterval(timer);
           origObj1.style.display = "none"; 
+          origObj15.style.display = "none"; 
           origObj2.style.display = "none"; 
           //swap the image, and fadeIn, which is the same as above function
           
@@ -308,20 +367,60 @@ body {
           fadeIn(obj1);
         }
         origObj1.style.opacity = opacity;
+        origObj15.style.opacity = opacity;
         origObj2.style.opacity = opacity;
         opacity -=  0.1;
-      }, 50);
+        origObj1.style.top = (origObj1.style.top-100)+'px';
+        origObj15.style.top = (origObj15.style.top-100)+'px';
+        origObj2.style.top = (origObj2.style.top-100)+'px';
+
+        console.log(origObj1.style.pos);
+
+      }, 1000);
       }
 
     function waithide()
     {
-      var origObj1 = document.getElementById("thisone");
+      var origObj1 = document.getElementById("thisone1");
+      var origObj15 = document.getElementById("thisone2");
       var origObj2 = document.getElementById("container");
       var obj1 = document.getElementById("p");
       var obj2 = document.getElementById("img");
       
-      fadeOutAndfadeIn(origObj1, origObj2, obj1, obj2);
+      fadeOutAndfadeIn(origObj1, origObj15, origObj2, obj1, obj2);
     }
+  </script>
+
+  <script>
+    function animateButton() {
+      var origObj1 = document.getElementById("thisone1");
+      var origObj15 = document.getElementById("thisone2");
+      var origObj2 = document.getElementById("container");
+      var obj1 = document.getElementById("p");
+      var obj2 = document.getElementById("img");
+      if(false){
+        $("#img").animate({ height: 'toggle', opacity: 0 }, 'slow');
+        $("#p").animate({ height: 'toggle', opacity: 0 }, 'slow');
+        $("#thisoneNew").animate({ height: 'toggle', opacity: 0 }, 'slow');
+        setTimeout(function(){
+          $("#thisone1").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+          $("#thisone2").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+          $("#container").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        }, 1000);
+      }
+      else{
+        $("#thisone1").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        $("#thisone2").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        $("#container").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
+        setTimeout(function(){
+          $("#img").animate({ height: 'toggle', opacity: 1 }, 'slow');
+          $("#p").animate({ height: 'toggle', opacity: 1 }, 'slow');
+          $("#thisoneNew").animate({ height: 'toggle', opacity: 1 }, 'slow');
+        }, 1000);
+      }
+      
+
+      };
   </script>
 
       <div data-aos="fade-up" data-aos-duration="2000" class="a" >
@@ -333,16 +432,19 @@ body {
     </div>
 
     <div data-aos="fade-up" data-aos-duration="3000">
-      <div class='main' id="thisone" onclick="waithide()"> Michael Kronovet </div>
+      <div class='main' id="thisone1"> Michael Kronovet </div>
     </div>
 
-    <div id="container">
+    <div id="container" style="position: relative;">
         <div id="text" onload="typeIt();"></div><div id="cursor"></div>
     </div>
     <script type="text/javascript">
-    // List of sentences
-var _CONTENT = [ 
-	"Student at Carnegie Mellon"
+
+for (var randNums=[],i=0;i<40;++i) randNums[i]= Math.floor(Math.random() * 10); 
+// List of sentences
+var _CONTENT = [
+  "Student", "Data Scientist", "Software Engineer",
+	"Student | Data Scientist | Software Engineer"
 ];
 
 // Current sentence being processed
@@ -362,6 +464,7 @@ var _CURSOR = document.querySelector("#cursor");
 
 // Implements typing effect
 function Type() { 
+  var firstRun = true;
 	// Get substring with 1 characater added
 	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
 	_ELEMENT.innerHTML = text;
@@ -369,10 +472,43 @@ function Type() {
 
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
-		// Hide the cursor
-		_CURSOR.style.display = 'none';
+    // Hide the cursor
+    clearInterval(_INTERVAL_VAL);
+    if(_PART!=3){
+      setTimeout(function() {
+        _INTERVAL_VAL = setInterval(Delete, 50);
+      }, 1000);
+      firstRun = false;
+    }
+    else{
+      _CURSOR.style.display = 'none';
+    }
+	}
+}
 
+function Delete() {
+  // Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX-1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === "") {
 		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
 	}
 }
 
@@ -383,9 +519,17 @@ _INTERVAL_VAL = setInterval(Type, 100);
       
       <!-- <img src="myPic.jpg" class="animation-target" style="width:200px">--> 
 
-				<p id="p" style="margin-left: 50px; margin-right: 50px; padding-bottom: 50px; padding-top: 50px;">
+				<p id="p" style="margin-left: 50px; margin-right: 50px; padding-bottom: 0px; padding-top: 25px; text-align: center;">
 					I am an aspiring data scientist and software engineer from Charlotte, North Carolina. I am currently a sophomore at Carnegie Mellon University studying statistics and machine learning.
         </p> 
+
+
+    <div style="padding-top: 100px;"></div>
+
+    <div data-aos="fade-up" data-aos-duration="3000">
+      <div class="fa fa-angle-double-up" id="thisone2" style=" width: 100%; font-size: 100px; left: -10px; position: relative;" onclick="animateButton()"></div>
+    </div>
+    
 
   <div align="center" style="width: 100%; bottom: 0; position: fixed;">
     <a href="https://www.linkedin.com/in/michael-kronovet" class="fa fa-linkedin"></a>
