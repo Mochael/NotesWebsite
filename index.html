@@ -176,11 +176,17 @@ body {
   background: linear-gradient(65deg, rgba(46,204,113,0.4), rgba(243,156,18,0.4));
   color: white;
   font-size: 50px;
+
+
+  -webkit-animation: text-focus-out 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-out 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
 }
 .img__overlay:hover {
   opacity: 1;
   -webkit-animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 0.4s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  
 }
 
 
@@ -223,62 +229,29 @@ body {
   }
 }
 
-
-
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translate3d(0, -20%, 0);
-	}
-	to {
-		opacity: 1;
-		transform: translate3d(0, 0, 0);
-	}
-}
-
-
-.animated {
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-
-}
-
-
-@-webkit-keyframes fadeOutUp {
+@-webkit-keyframes text-focus-out {
   0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
-    -webkit-transform: translateY(0);
   }
   100% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
-    -webkit-transform: translateY(-300px);
   }
-  }
-
-  @keyframes fadeOutUp {
+}
+@keyframes text-focus-out {
   0% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
     opacity: 1;
-    transform: translateY(0);
   }
   100% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
     opacity: 0;
-    transform: translateY(-300px);
   }
-  }
-
-.fadeOutUp {
--webkit-animation-name: fadeOutUp;
-animation-name: fadeOutUp;
-}
-
-.animateIn {
-  animation: fadeIn 2s steps(10);
-}
-
-.animateOut {
-  animation: fadeIn 2s steps(100);
 }
 
 
