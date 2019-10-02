@@ -1,57 +1,27 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title>Main Website</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="index.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Main Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 <style>
-
-.fa {
-  font-size: 40px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 10px;
-  color: white;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-a:link {
-  color: white; 
-  background-color: transparent; 
-  text-decoration: none;
-}
-
-ul.a {
-  color: white; 
-  background-color: transparent; 
-  text-decoration: none;
-  font-size: 30px;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: lightgreen;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  /*2D2E2D*/
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 body {
@@ -59,10 +29,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-weight: bold;
-}
-
-.active {
-  display: block;
 }
 
 .topnav {
@@ -94,19 +60,6 @@ body {
   color: white;
 }
 
-#particles-js{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: black;
-  /*2D2E2D*/
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-
 .btn {
     padding: 14px 24px;
     border: 0 none;
@@ -125,43 +78,95 @@ body {
 .btn:hover {
     background: none;
     color: #4CAF50;
+    font-weight: bold;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.fa {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
 
 </style>
 </head>
 <body>
+
 <div class="topnav sticky-top">
-    <a href="index.html">Home</a>
-    <a href="resume.pdf" target="_blank">Resume</a>
-    <a href="projects.html">Projects</a>
-    <a class="active" href="notes.html">Class Notes</a>
-    <a href="books.html">Book Blog</a>
+  <a href="index.html">Home</a>
+  <a href="resume.pdf" target="_blank">Resume</a>
+  <a href="projects.html">Projects</a>
+  <a class="active" href="notes.html">Class Notes</a>
+  <a href="books.html">Book Blog</a>
 </div>
 
 <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
-  <!-- scripts -->
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
 <div data-aos="fade-up" data-aos-duration="2000">
-  <div class="panel-group" id="accordion" style ="padding-top: 75px;">
-    
+<div class="panel-group" id="accordion" style ="padding-top: 75px;">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
-            Statistics</a>
-            <a href="statistics.html" class="fa fa-sticky-note"></a>
+            Modern Regression Notes</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-                I am studying statistics and machine learning at Carnegie Mellon. Thus far, my favorite statistics and machine learning classes have been 
-                Modern Regression, Advanced Data Analysis, Data Mining, and Introduction to Machine Learning. I have posted some of the notes for these classes on the website.
-                The Modern Regression notes explore linear regression and anova testing. The Advanced Data Analysis notes focus on bootstrapping, linear smoothers, and causality testing.
-                The Data Mining notes highlight various applied machine learning techniques. The Introduction to Machine Learning notes explain in detail key machine learning algorithms.
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/01_prediction_basics.pdf">Prediction Basics</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/02 modeling intro.pdf">Modeling Intro</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/03 simple linear regression.pdf">Simple Linear Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/03 simple linear regression.pdf">Simple Linear Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/04 least-squares.pdf">Least Squares</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/05 mle.pdf">Maximum Likelihood Estimator</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/06 diagnostics.pdf">Diagnostics</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/07 inference.pdf">Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/08 predictive inf.pdf">Predictive Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/09 anova.pdf">Anova</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/10 matrix.pdf">Matrices with Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/11 multiple reg.pdf">Multiple Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/12 diagnostics & inference.pdf">Diagnostics and Inference</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/13 poly-cat.pdf">Polynomial and Categorical Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/14 interactions.pdf">Interactions</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/15 model-selection.pdf">Model Selection</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/16 collinearity & outliers.pdf">Collinearity and Outliers</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/17 agnostic regression.pdf">Agnostic Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/18 high-dim regression.pdf">Higher Dimension Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/19 nonparametric.pdf">Nonparametric Modeling</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-401/20 causality.pdf">Causality</a></li>
         </div>
       </div>
     </div>
@@ -169,24 +174,85 @@ body {
       <div class="panel-heading">
         <h4 class="panel-title">
           <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
-            Computational Finance</a>
-            <a href="mathfi.html" class="fa fa-sticky-note"></a>
+            Intro to Machine Learning Notes</a>
         </h4>
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-                I recently took Introduction to Mathematical Finance, which has helped me understand the concept of pricing by replication and 
-                has also taught me much about the various tradable securities offered in the market. The notes are formatted like a textbook, with lengthy explanations and many examples.
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/ProbReview.pdf">Probability Review</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Lecture_1.pdf">MLE and MAP</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Lecture_3.pdf">Classification, Bayes Decision Rule, kNN</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Linear Regression and Regularization.pdf">Linear Regression and Regularization</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Naive Bayes.pdf">Naive Bayes</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Logistic Regression.pdf">Logistic Regression</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Decision Trees.pdf">Decision Trees</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Perceptron.pdf">Perceptron</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Neural Networks.pdf">Neural Networks</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Support Vector Machines.pdf">Support Vector Machines</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Prime:Dual and Kernels.pdf">Prime/Dual and Kernels.pdf</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/Boosting.pdf">Boosting</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/LearningTheory.pdf">Learning Theory</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/GraphicalModels.pdf">Graphical Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/EM.pdf">Expectation Maximization and Gaussian Mixture Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/PCA.pdf">Principal Component Analysis</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/HMMs.pdf">Hidden Markov Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/10-701/RL.pdf">Reinforcement Learning</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Data Mining</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/Data_Mining/DataMining1.pdf">Supervised learning</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/Data_Mining/DataMining2.pdf">Unsupervised learning</a></li>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Advanced Data Analysis</a>
+            <a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/" class="fa fa-book"></a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_One.pdf">Basic Regression and Cross Validation</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Two.pdf">Bootstrapping and Significance Testing with Regression in R</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Three.pdf">Multidimensional Kernel Regression and Additive Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Four.pdf">Hypothesis Testing Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Five.pdf">Multidimensional Probability and Density Estimation</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Six.pdf">Factor Models</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/stats/36-402/402_Seven.pdf">Causal inference</a></li>
         </div>
       </div>
     </div>
 
-  </div>
-</div>
-  <div class="collapse" id="collapseExample" style="margin-left: 25px; margin-right: 25px;">
-      <li style="color: white; font-size: 25px;"><a href="statistics.html">Statistics</a></li>
-      <li style="color: white; font-size: 25px;"><a href="compsci.html">Computer Science</a></li>
-      <li style="color: white; font-size: 25px;"><a href="mathfi.html">Mathematical Finance</a></li>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
+            Intro to Math Finance Notes</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse in">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi1.pdf">Replication and No Arbitrage Pricing</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi2.pdf">Fixed Income Securities and Interest Rates</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi3.pdf">Forward Contracts and Put/Call Options</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi4.pdf">Finite One Period Model</a></li>
+          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi5.pdf">Utility Optimization</a></li>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
