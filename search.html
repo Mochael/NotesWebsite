@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+
 <style>
 #particles-js{
   position: absolute;
@@ -105,6 +105,66 @@ a:active {
   text-decoration: none;
 }
 
+.fa {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
+
+/* Search Bar Stuff */
+
+#searchbar{ 
+     margin-top: 10%;
+     margin-left: 2%; 
+     padding:15px; 
+     border-radius: 10px;
+   } 
+ 
+/*   input[type=text] { 
+      width: 30%; 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+   input[type=text]:focus { 
+     width: 70%; 
+   }
+*/
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control-underlined {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-radius: 0;
+  padding-left: 1%;
+}
+
+/* color: #aaa; */
+.form-control::placeholder {
+  font-size: 2rem;
+  color: white;
+  font-style: bold;
+  font-weight: bold;
+}
+
+.input {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
 </style>
 </head>
 <body>
@@ -113,8 +173,9 @@ a:active {
   <a href="index.html">Home</a>
   <a href="resume.pdf" target="_blank">Resume</a>
   <a href="projects.html">Projects</a>
-  <a class="active" href="notes.html">Class Notes</a>
+  <a href="notes.html">Class Notes</a>
   <a href="books.html">Book Blog</a>
+  <a class="active" href="search.html">Random Notes Search</a>
 </div>
 
 <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
@@ -123,25 +184,75 @@ a:active {
 <script>
     AOS.init();
 </script>
+
+<div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+<input id="exampleFormControlInput5" type="email" placeholder="Search" onkeyup="search_topic()"
+class="form-control form-control-underlined border-success input" 
+style="background-color: black; padding-top: 10%; padding-bottom: 2%; color: white;">
+        </div>
+    </div>
+
+<script>
+    function search_topic() { 
+    let input = document.getElementById('exampleFormControlInput5').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('topic'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="block";            
+        } 
+    } 
+} 
+</script>
+
+
 <div data-aos="fade-up" data-aos-duration="2000">
-<div class="panel-group" id="accordion" style ="padding-top: 75px;">
+<div class="panel-group" id="accordion" style ="padding-top: 2%;">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;">
-            Intro to Math Finance Notes</a>
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+            Prediction vs Confidence Interval</a>
         </h4>
       </div>
       <div id="collapse1" class="panel-collapse collapse in">
         <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi1.pdf">Replication and No Arbitrage Pricing</a></li>
-          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi2.pdf">Fixed Income Securities and Interest Rates</a></li>
-          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi3.pdf">Forward Contracts and Put/Call Options</a></li>
-          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi4.pdf">Finite One Period Model</a></li>
-          <li style="color: white; font-size: 20px;"><a href="notes/mathfinance/mathfi5.pdf">Utility Optimization</a></li>
+          Explanation of topic
         </div>
       </div>
     </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+            Aristotle</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+            Explanation of topic
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+            Phylogenetic Trees</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+            Explanation of topic
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
