@@ -9,7 +9,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="JQueryUI.css">
+
+  <link rel="icon" type="image/png" href="logo.png">
 <style>
+
+.logo img:hover {
+  opacity: .5;
+}
 
 .fa {
   
@@ -304,7 +310,7 @@ body {
   <a href="notes.html">Class Notes</a>
   <a href="books.html">Book Blog</a>
   <a href="search.html">Notes Search</a>
-  <a href="travel.html">Travel</a>
+  
 </div>
 
 
@@ -406,6 +412,8 @@ body {
       };
   </script>
 
+  
+
       <div data-aos="fade-up" data-aos-duration="2000" class="a" style="padding-top: 120px;">
 
       <a class="img" id="img" style="padding:1px;border: solid white;">
@@ -418,6 +426,7 @@ body {
 
     <div data-aos="fade-up" data-aos-duration="3000" style="padding-top: 0px; text-align: center;">
       <div class='main' id="thisone1"> Michael Kronovet </div>
+      
     </div>
 
     <div id="container" style="position: relative;">
@@ -516,7 +525,10 @@ _INTERVAL_VAL = setInterval(Type, 100);
     <div style="padding-top: 100px;"></div>
 
     <div data-aos="fade-up" data-aos-duration="3000">
-      <div class="fa fa-angle-double-up" id="thisone2" style=" width: 100%; font-size: 100px; left: -10px; position: relative;" onclick="animateButton()"></div>
+      <!--<div class="fa fa-angle-double-up" id="thisone2" style=" width: 100%; font-size: 100px; left: -10px; position: relative;" onclick="animateButton()"></div>--> 
+      <div class="logo">
+        <img src="logo.png" id="thisone2" style=" width: 10%; font-size: 100px; left: -10px; position: relative; display: block; margin-left: auto; margin-right: auto;" onclick="animateButton()"/>
+      </div> 
     </div>
     
 

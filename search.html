@@ -176,7 +176,7 @@ a:active {
   <a href="notes.html">Class Notes</a>
   <a href="books.html">Book Blog</a>
   <a class="active" href="search.html">Notes Search</a>
-  <a href="travel.html">Travel</a>
+  
 </div>
 
 <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
@@ -214,24 +214,41 @@ style="background-color: transparent; padding-top: 12.5%; padding-bottom: 2%; co
 
 <div data-aos="fade-up" data-aos-duration="2000">
 <div class="panel-group" id="accordion" style ="padding-top: 2%;">
+  
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Kubernetes</a>
+          Microservices vs Monolithic Architecture</a>
       </h4>
     </div>
     <div id="collapse5" class="panel-collapse collapse in">
       <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        Explanation of topic
+        <h5 style="font-weight: bold;">Monolithic Architecture</h5>
+        <img src="search_pics/monolithic.png" style="width: 40%;">
+        <ul>
+          <li>Applications were built modularly, but deployed in a large single applications.</li>
+          <li>If you needed to make a change, you would have to test the entire application after the change to see if it worked before redeploying.</li>
+          <li>If there is a large increase in activity for a specific feature of an application for a brief time period, you need resources to scale the entire application (not just that feature) since all the features are deployed in the large application package.</li>
+          </ul> 
+          <h5 style="font-weight: bold;">Microservices</h5>
+          <img src="search_pics/microservices.png" style="width: 40%;">
+          <ul>
+            <li>The entire application is split into multiple different sub-applications called "microservices" which are each deployed separately on their own servers.</li>
+            <li>The "microservices" communicate with each other through REST APIs, to allow the application to run like normal. For example, a "microservice" could be made for a shopping catalogue application and another for a user's view application. The user's view application would communicate with the shopping catalogue application to determine and show the relevant items in the shopping catalogue.</li>
+            <li>It allows for more flexible scaling (can scale up only certain parts of application as needed) and development (only need to test the "microservice" where the change was made).</li>
+            <li>"Microservice Architecture" refers to how an application is split into microservices for maximal efficiency.</li>
+            <li>A Docker container can be used to run each microservice.</li>
+          </ul>
       </div>
     </div>
   </div>
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Docker</a>
+          Xgboost</a>
       </h4>
     </div>
     <div id="collapse4" class="panel-collapse collapse in">
@@ -240,45 +257,66 @@ style="background-color: transparent; padding-top: 12.5%; padding-bottom: 2%; co
       </div>
     </div>
   </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-            Prediction vs Confidence Interval</a>
-        </h4>
-      </div>
-      <div id="collapse1" class="panel-collapse collapse in">
-        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-          Explanation of topic
-        </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Lightgbm</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        Explanation of topic
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-            Aristotle</a>
-        </h4>
-      </div>
-      <div id="collapse2" class="panel-collapse collapse">
-        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-            Explanation of topic
-        </div>
+  </div>
+  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Kubernetes</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        Explanation of topic
       </div>
     </div>
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-            Phylogenetic Trees</a>
-        </h4>
-      </div>
-      <div id="collapse3" class="panel-collapse collapse">
-        <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-            Explanation of topic
-        </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Docker (containerization) vs Vagrant (virtual machine)</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <ul>
+        <li>What if you can run an application on your machine, but someone on another machine can't?</li>
+        <li>If you want to manage machines, you should use Vagrant. If you want to build and run applications environments, you should use Docker. 
+          Vagrant is a tool for managing virtual machines. Docker is a tool for building and deploying applications by packaging them into lightweight containers.</li>
+        </ul>
+        <h5 style="font-weight: bold;">Vagrant</h5>
+        <img src="search_pics/vagrant.png" style="width: 40%;">
+        <ul>
+          <li>Say you start with a fresh virtual machine, then you have a "provisioning script" which installs on the virtual machine all the extra software you need to run your application.</li>
+          <li>This "provisioning script" is also run on the staging server (server for development/testing) and production server (server to publish finished application) so that anyone can inintialize a virtual machine and run your application.</li>
+          <li>Now, someone can just take your project code from github and run your application from any virtual machine as long as they use the "provisioning script" to install everything.</li>
+        </ul>
+        <h5 style="font-weight: bold;">Docker</h5>
+        <img src="search_pics/docker.png" style="width: 40%;">
+        <ul>
+          <li>Docker uses a "dockerfile" to convert your project code and all installation requirements into a "docker image" (this image is essentially everything you need to run your application).</li>
+          <li>You then run this "docker image" as something called a "container", and you can run as many of these "containers" as you want on a single virtual machine (as long as you don't run out of memory).</li>
+          <li>You store your "docker image" on essentially a docker version of Github (like Docker Hub) and now any machine with Docker can run your applicatino using the "docker image".</li>
+          <li>Amazon's "ECS" (EC2 (elastic compute cloud) Container Service) platform can manage your containers for you.</li>
+        </ul>
       </div>
     </div>
+  </div>
+
 
   </div>
 </div>
