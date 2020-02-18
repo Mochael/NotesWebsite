@@ -1,0 +1,1114 @@
+<html>
+<head>
+<title>Main Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"><link href="index.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="icon" type="image/png" href="logo.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>baguetteBox.run('.tz-gallery');</script>
+
+
+<style>
+.container.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color: #888;
+    font-size: 18px;
+}
+
+.tz-gallery {
+    padding: 40px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.tz-gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: bold;
+}
+
+.topnav {
+  background-color: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    text-transform: none;
+    outline: 0 none;
+    background: none;
+    color: #ffffff;
+    font-size: 50px;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn:hover {
+    background: none;
+    color: #4CAF50;
+}
+
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: black;
+  /*2D2E2D*/
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.fa {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  color: white;
+}
+
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text {
+  float: left;
+  width: 99.9%;
+  padding-right: 100px;
+  
+}
+
+.images {
+  float: left;
+  width: .1%;
+  padding-bottom: 20px;
+  width: auto;
+  height: auto;
+}
+
+/*Divide for images*/
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+</style>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var navBar = document.getElementById("myNav");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      navBar.style.display = "none";
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+      navBar.style.display = "block";
+    }
+</script>
+
+
+  <body>
+  
+  <div class="topnav sticky-top" id="myNav">
+    <a href="index.html">Home</a>
+    <a href="resume.pdf" target="_blank">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="notes.html">Class Notes</a>
+    <a href="books.html">Book Blog</a>
+    <a href="search.html">Notes Search</a>
+    <a  class="active" href="travel.html">Travel</a>
+  </div>
+
+  <div id="particles-js" style="position:fixed;width:100%;z-index:-10;"></div>
+<script src="particles.js"></script>
+<script src="app.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<div data-aos="fade-up" data-aos-duration="2000">
+<div class="panel-group" id="accordion" style ="padding-top: 75px;">
+    <div class="panel panel-default" style ="padding-bottom: 25px;">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px; padding-top: 100px">
+              Travel</a>
+          </h4>
+        </div>
+        <div id="collapse0" class="panel-collapse collapse">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    <div class="text">
+                        On this page I talk about my favorite experiences travelling as well as things I would recommend and 
+                        things that I would like to do going back. Check out my <a href="https://www.youtube.com/channel/UCb3PeQhIObLhLC1Qwof8r-g" target="_blank">youtube channel</a> to watch some videos I put together of my travels.
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse15" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              San Francisco, CA</a>
+          </h4>
+        </div>
+        <div id="collapse15" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> I visited San Francisco in early January 2020. While there I explored the city as well as the surrounding areas like Mountain View and Sunnyvale. 
+                        During my trip I was lucky to have one of my friends chauffeur me around and show me all the coolest places to go to. I visited Stanford and Apple Park and biked over to Google's Campus. 
+                        In San Francisco I got to visit Ghirardelli Square (and eat a massive ice cream sunday), take a ferry from Fisherman's Wharf around Alcatraz, ride the cable car across town, watch Hamilton (amazing), and eat delicious food throughout. 
+                        My friend's family also was sure to stuff me fool of yummy traditional Korean cooking. I really enjoyed the trip, and my favorite part was a day long bike ride exploring Mountain View and its surrounding areas. 
+                        The scenery in the more rural areas was breathtaking, and the weather was very nice despite it being in the middle of winter.
+                    </p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im1.jpeg">
+                                    <img src="travel_pics/San Francisco/im1.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im2.jpeg">
+                                    <img src="travel_pics/San Francisco/im2.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im7.jpeg">
+                                    <img src="travel_pics/San Francisco/im7.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im12.jpeg">
+                                    <img src="travel_pics/San Francisco/im12.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im13.jpeg">
+                                    <img src="travel_pics/San Francisco/im13.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im15.jpeg">
+                                    <img src="travel_pics/San Francisco/im15.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im16.jpeg">
+                                    <img src="travel_pics/San Francisco/im16.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im19.jpeg">
+                                    <img src="travel_pics/San Francisco/im19.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im20.jpeg">
+                                    <img src="travel_pics/San Francisco/im20.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im22.jpeg">
+                                    <img src="travel_pics/San Francisco/im22.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im3.jpeg">
+                                    <img src="travel_pics/San Francisco/im3.jpeg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im4.jpeg">
+                                    <img src="travel_pics/San Francisco/im4.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im5.jpeg">
+                                    <img src="travel_pics/San Francisco/im5.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im6.jpeg">
+                                    <img src="travel_pics/San Francisco/im6.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im8.jpeg">
+                                    <img src="travel_pics/San Francisco/im8.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im10.jpeg">
+                                    <img src="travel_pics/San Francisco/im10.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im11.jpeg">
+                                    <img src="travel_pics/San Francisco/im11.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im17.jpeg">
+                                    <img src="travel_pics/San Francisco/im17.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im18.jpeg">
+                                    <img src="travel_pics/San Francisco/im18.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/San Francisco/im21.jpeg">
+                                    <img src="travel_pics/San Francisco/im21.jpeg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse13" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Asheville, NC</a>
+          </h4>
+        </div>
+        <div id="collapse13" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im1.jpeg">
+                                    <img src="travel_pics/Asheville/im1.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im2.jpeg">
+                                    <img src="travel_pics/Asheville/im2.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im3.jpeg">
+                                    <img src="travel_pics/Asheville/im3.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im4.jpeg">
+                                    <img src="travel_pics/Asheville/im4.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im5.jpeg">
+                                    <img src="travel_pics/Asheville/im5.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im6.jpeg">
+                                    <img src="travel_pics/Asheville/im6.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im7.jpeg">
+                                    <img src="travel_pics/Asheville/im7.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im8.jpeg">
+                                    <img src="travel_pics/Asheville/im8.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im9.jpeg">
+                                    <img src="travel_pics/Asheville/im9.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im10.jpeg">
+                                    <img src="travel_pics/Asheville/im10.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im11.jpeg">
+                                    <img src="travel_pics/Asheville/im11.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im12.jpeg">
+                                    <img src="travel_pics/Asheville/im12.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im13.jpeg">
+                                    <img src="travel_pics/Asheville/im13.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im14.jpeg">
+                                    <img src="travel_pics/Asheville/im14.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im15.jpeg">
+                                    <img src="travel_pics/Asheville/im15.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im16.jpeg">
+                                    <img src="travel_pics/Asheville/im16.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im17.jpeg">
+                                    <img src="travel_pics/Asheville/im17.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im18.jpeg">
+                                    <img src="travel_pics/Asheville/im18.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im19.jpeg">
+                                    <img src="travel_pics/Asheville/im19.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im20.jpeg">
+                                    <img src="travel_pics/Asheville/im20.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Asheville/im21.jpeg">
+                                    <img src="travel_pics/Asheville/im21.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Los Angeles, CA</a>
+          </h4>
+        </div>
+        <div id="collapse10" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+
+
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Miami, FL</a>
+          </h4>
+        </div>
+        <div id="collapse9" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              New York, NY</a>
+          </h4>
+        </div>
+        <div id="collapse8" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Madison, WI</a>
+          </h4>
+        </div>
+        <div id="collapse6" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> I visited Madison, Wisconsin to interview with Epic Systems in late October 2019 (actually during Halloween). 
+                        The city of Madison was quaint and beautiful, albeit freezing and snow-covered. I walked around the absurdly large University of Wisconsin Campus and came across many college students dressed for Halloween. 
+                        The college seemed like a very fun and lively place to be, even if it was bitterly cold.
+                        The Epic Systems Office was breathtaking, and I doubt that I will ever see another office like it. Every employee had their own private office in a massive company campus where each building has its own theme ranging from Medieval Times to Star Wars. 
+                        There wasn't enough time during the day I visited to see the whole office and interview, so I stayed a little late and ran around the campus trying to take in as much as I could. I spent most of my time in the Harry Potter section of the campus. 
+                        There were several cafeterias around the campus with delicious food made by chefs employed by Epic who were tasked with not only making the food but ordering the ingredients and planning the menus. 
+                        It seemed like a very high percentage of people in Madison would be working for Epic.
+                    </p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im1.jpeg">
+                                    <img src="travel_pics/Madison/im1.jpeg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im2.jpeg">
+                                    <img src="travel_pics/Madison/im2.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im3.jpeg">
+                                    <img src="travel_pics/Madison/im3.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im4.jpeg">
+                                    <img src="travel_pics/Madison/im4.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im5.jpeg">
+                                    <img src="travel_pics/Madison/im5.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im6.jpeg">
+                                    <img src="travel_pics/Madison/im6.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im7.jpeg">
+                                    <img src="travel_pics/Madison/im7.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im8.jpeg">
+                                    <img src="travel_pics/Madison/im8.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im9.jpeg">
+                                    <img src="travel_pics/Madison/im9.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im10.jpeg">
+                                    <img src="travel_pics/Madison/im10.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im11.jpeg">
+                                    <img src="travel_pics/Madison/im11.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="travel_pics/Madison/im12.jpeg">
+                                    <img src="travel_pics/Madison/im12.jpeg" alt="Bridge">
+                                </a>
+                            </div>
+                            <video width="320" height="240" controls>
+                                <source src="travel_pics/Madison/vid1.mp4" type="video/mp4">
+                            </video>
+                            <video width="320" height="240" controls>
+                                <source src="travel_pics/Madison/vid2.mp4" type="video/mp4">
+                            </video>
+                            <video width="320" height="240" controls>
+                                <source src="travel_pics/Madison/vid3.mp4" type="video/mp4">
+                            </video>
+                            
+                           
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Boston, MA</a>
+          </h4>
+        </div>
+        <div id="collapse5" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Dublin</a>
+          </h4>
+        </div>
+        <div id="collapse4" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>   
+
+                </div>
+            </div>
+      </div>
+    </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Scotland</a>
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+
+                </div>
+            </div>
+      </div>
+    </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Paris</a>
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 400px;">
+                <div class="group">
+                    
+                    <p> Filler</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+                    
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;">
+              Croatia</a>
+          </h4>
+        </div>
+        <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+                <div class="group">
+
+                    <p> I traveled with my mother to Zagreb and Dubrovnik.</p>
+                    <h5 style="font-weight: bold;">Trip Highlights</h5>
+                    <div class="tz-gallery">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Park">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Bridge">
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Tunnel">
+                                </a>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <a class="lightbox" href="myPic.jpg">
+                                    <img src="myPic.jpg" alt="Coast">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <h5 style="font-weight: bold;">Restaurants</h5>
+                <ul>
+                    <li>This place</li>
+                    <li>This place</li>
+                </ul>
+
+                </div>
+            </div>
+      </div>
+    </div>
+    
+
+
+
+</div>
+
+
+
+<img id="myImg" src="myPic.jpg" style="width:100%;max-width:300px">
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+
+    
+
+</body>
+</html>
