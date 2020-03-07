@@ -216,7 +216,91 @@ style="background-color: transparent; padding-top: 12.5%; padding-bottom: 2%; co
 
 <div data-aos="fade-up" data-aos-duration="2000">
 <div class="panel-group" id="accordion" style ="padding-top: 2%;">
-  
+ 
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Making Sense of a Market in Terms of Probabilities</a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <h5 style="font-weight: bold;"></h5>
+        Consider a game you play with your friend where you get $10 if you win and you pay your friend $5 if you lose. How can you decide if you should play this game?
+          <ul>
+            <li>Making a market comes down to expected value. In order for this to be a fair market, the expected value of playing this game (for either player) must be 0, otherwise the option with the lower expected value shouldn't be picked.</li>
+            <li>In the example, your expected value of playing the game E(X) = 10p - 5(1-p) where p is the probability that you win. For this game to be fair, E(X) = 0 = 10p - 5(1-p) which implies that p = 1/3.</li>
+            <li>In fact, for a Bernoulli random variable like in this game, the probability for a fair market generalizes to p = (money from losing)/(money from winning + money from losing).</li>
+            <li>In the Bernoulli case, you should play the game if p > (money from losing)/(money from winning + money from losing) and not play if it is lower. In this example, you should play the game if you think that p < 1/3. </li>
+            <li>You can also derive the fair market probabilities for other distributions</li>
+            <li>Hopefully this will help when you bet against your friends!</li>
+            <li>The variance of this distribution Var(X) = E(X^2)-E(X)^2 = 100p + 25(1-p) - (10p - 5(1-p)) = 70p + 20 </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Bootstrapping</a>
+      </h4>
+    </div>
+    <div id="collapse8" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <h5 style="font-weight: bold;"></h5>
+          <ul>
+            <li>Take n samples with replacement (you could also use other data simulation methods such as estimating parameters from the data and then simulating data using these parameters) and compute your test statistic using the simulated data. Repeat this resampling process B times to get a distribution for your test statistic.</li>
+            <li><a href="https://towardsdatascience.com/an-introduction-to-the-bootstrap-method-58bcb51b4d60">Useful Link</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          Variational Autoencoder</a>
+      </h4>
+    </div>
+    <div id="collapse7" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <h5 style="font-weight: bold;"></h5>
+          <ul>
+            <li><a href="https://jaan.io/what-is-variational-autoencoder-vae-tutorial/">Useful Link</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          EM Algorithm</a>
+      </h4>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <h5 style="font-weight: bold;">E Step</h5>
+        <ul>
+          <li>Compute the expected value of the sufficient statistics of the hidden variables given current estimations of the model parameters.</li>
+          <li>In K-Means, it's where each datapoint is assigned to the closest cluster (think of this as the cluster centers are latent random variables because a point's assignment in a Gaussian Mixture Model follows a probability distribution).</li>
+          <li>We close the gap, making the lower bound=likelihood</li>
+        </ul>
+          <h5 style="font-weight: bold;">M Step</h5>
+          <ul>
+            <li>Compute the parameters under current results of the expected value of the hidden variables.</li>
+            <li>We optimize a lower bound on the likelihood</li>
+            <li>In K-Means, it's where the cluster centers are recomputed to minimize the distance for the expected cluster assignments found in the E step (think of this as a parameter, because cluster centers are fixed values and not random variables).</li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
