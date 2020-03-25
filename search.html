@@ -10,6 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
     <link rel="icon" type="image/png" href="logo.png">
 <style>
 #particles-js{
@@ -217,6 +221,23 @@ style="background-color: transparent; padding-top: 12.5%; padding-bottom: 2%; co
 <div data-aos="fade-up" data-aos-duration="2000">
 <div class="panel-group" id="accordion" style ="padding-top: 2%;">
  
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
+          PAC Learning</a>
+      </h4>
+    </div>
+    <div id="collapse9" class="panel-collapse collapse in">
+      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
+        <h5 style="font-weight: bold;"></h5>
+        <ul>
+          <li>The hypothesis (\( h \)) we find with \(m\) examples is probably ( \(p \geq 1- \delta \)) approximately (\(err_D(h) \leq \epsilon \) ) correct. (where \( err_D(h) = err_{true}(h)-err_{train}(h) \))</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <div class="panel panel-default">
     <div class="panel-heading">
       <h4 class="panel-title">
