@@ -181,7 +181,7 @@ a:active {
   <a href="notes.html">Class Notes</a>
   <a href="books.html">Book Blog</a>
   <a class="active" href="search.html">Notes Search</a>
-  <a href="travel.html">Travel</a>
+  <!--<a href="travel.html">Travel</a> -->
   
 </div>
 
@@ -219,217 +219,81 @@ style="background-color: transparent; padding-top: 12.5%; padding-bottom: 2%; co
 
 
 <div data-aos="fade-up" data-aos-duration="2000">
-<div class="panel-group" id="accordion" style ="padding-top: 2%;">
- 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          PAC Learning</a>
-      </h4>
-    </div>
-    <div id="collapse9" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;"></h5>
-        <ul>
-          <li>The hypothesis (\( h \)) we find with \(m\) examples is probably ( \(p \geq 1- \delta \)) approximately (\(err_D(h) \leq \epsilon \) ) correct. (where \( err_D(h) = err_{true}(h)-err_{train}(h) \))</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+        
+    
+    <h1><a href="https://blog.jupyter.org/i-python-you-r-we-julia-baf064ca1fb6" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Coding with Multiple Languages in Jupyter Notebook </a></h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse8" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Making Sense of a Market in Terms of Probabilities</a>
-      </h4>
-    </div>
-    <div id="collapse8" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;"></h5>
-        Consider a game you play with your friend where you get $10 if you win and you pay your friend $5 if you lose. How can you decide if you should play this game?
-          <ul>
-            <li>Making a market comes down to expected value. In order for this to be a fair market, the expected value of playing this game (for either player) must be 0, otherwise the option with the lower expected value shouldn't be picked.</li>
-            <li>In the example, your expected value of playing the game E(X) = 10p - 5(1-p) where p is the probability that you win. For this game to be fair, E(X) = 0 = 10p - 5(1-p) which implies that p = 1/3.</li>
-            <li>In fact, for a Bernoulli random variable like in this game, the probability for a fair market generalizes to p = (money from losing)/(money from winning + money from losing).</li>
-            <li>In the Bernoulli case, you should play the game if p > (money from losing)/(money from winning + money from losing) and not play if it is lower. In this example, you should play the game if you think that p < 1/3. </li>
-            <li>You can also derive the fair market probabilities for other distributions</li>
-            <li>Hopefully this will help when you bet against your friends!</li>
-            <li>The variance of this distribution Var(X) = E(X^2)-E(X)^2 = 100p + 25(1-p) - (10p - 5(1-p)) = 70p + 20 </li>
-          </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pics/lecture25-SpectrumGM-compressed.pdf" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Spectral Learning for Graph Models </a></h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Bootstrapping</a>
-      </h4>
-    </div>
-    <div id="collapse7" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;"></h5>
-          <ul>
-            <li>Take n samples with replacement (you could also use other data simulation methods such as estimating parameters from the data and then simulating data using these parameters) and compute your test statistic using the simulated data. Repeat this resampling process B times to get a distribution for your test statistic.</li>
-            <li><a href="https://towardsdatascience.com/an-introduction-to-the-bootstrap-method-58bcb51b4d60">Useful Link</a></li>
-          </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pages/Indian Buffet Process.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Indian Buffet Process </a></h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Variational Autoencoder</a>
-      </h4>
-    </div>
-    <div id="collapse6" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;"></h5>
-          <ul>
-            <li><a href="https://jaan.io/what-is-variational-autoencoder-vae-tutorial/">Useful Link</a></li>
-          </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pages/Random CMU Course Webpages.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Random CMU Course Webpages </a></h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          EM Algorithm</a>
-      </h4>
-    </div>
-    <div id="collapse5" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;">E Step</h5>
-        <ul>
-          <li>Compute the expected value of the sufficient statistics of the hidden variables given current estimations of the model parameters.</li>
-          <li>In K-Means, it's where each datapoint is assigned to the closest cluster (think of this as the cluster centers are latent random variables because a point's assignment in a Gaussian Mixture Model follows a probability distribution).</li>
-          <li>We close the gap, making the lower bound=likelihood</li>
-        </ul>
-          <h5 style="font-weight: bold;">M Step</h5>
-          <ul>
-            <li>Compute the parameters under current results of the expected value of the hidden variables.</li>
-            <li>We optimize a lower bound on the likelihood</li>
-            <li>In K-Means, it's where the cluster centers are recomputed to minimize the distance for the expected cluster assignments found in the E step (think of this as a parameter, because cluster centers are fixed values and not random variables).</li>
-          </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pages/SVM Decision Boundary.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        SVM Decision Boundary </a>  </h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Microservices vs Monolithic Architecture</a>
-      </h4>
-    </div>
-    <div id="collapse4" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <h5 style="font-weight: bold;">Monolithic Architecture</h5>
-        <img src="search_pics/monolithic.png" style="width: 40%;">
-        <ul>
-          <li>Applications were built modularly, but deployed in a large single applications.</li>
-          <li>If you needed to make a change, you would have to test the entire application after the change to see if it worked before redeploying.</li>
-          <li>If there is a large increase in activity for a specific feature of an application for a brief time period, you need resources to scale the entire application (not just that feature) since all the features are deployed in the large application package.</li>
-          </ul> 
-          <h5 style="font-weight: bold;">Microservices</h5>
-          <img src="search_pics/microservices.png" style="width: 40%;">
-          <ul>
-            <li>The entire application is split into multiple different sub-applications called "microservices" which are each deployed separately on their own servers.</li>
-            <li>The "microservices" communicate with each other through REST APIs, to allow the application to run like normal. For example, a "microservice" could be made for a shopping catalogue application and another for a user's view application. The user's view application would communicate with the shopping catalogue application to determine and show the relevant items in the shopping catalogue.</li>
-            <li>It allows for more flexible scaling (can scale up only certain parts of application as needed) and development (only need to test the "microservice" where the change was made).</li>
-            <li>"Microservice Architecture" refers to how an application is split into microservices for maximal efficiency.</li>
-            <li>A Docker container can be used to run each microservice.</li>
-          </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pages/Dirichlet Process.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Dirichlet Process </a>  </h1>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Boosting Frameworks</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <ul>
-          <li><a href="https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db">Useful Link</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Kubernetes</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        Kubernetes is a container orchestratino system that automates the deployment, scheduling and scaling of containerized applications.
-      <img src="search_pics/Kubernetes_Diagram.png" style="width: 40%;">
-      <ul>
-        <li>The Control Plane’s components make global decisions about the cluster</li>
-        <li>kube-apiserver is the main implementation of a Kubernetes API server which acts as the front end for users to interact with the Kubernetes control plane.</li>
-        <li>etcd is used to store key-value information about all nodes in the cluster.</li>
-        <li>kube-scheduler watches for newly created pods with no assigned node, and selects a node for them to run on based on a variety of factors.</li>
-        <li>kube-controller-manager runs a control loop that watches the shared state of the cluster through the apiserver and makes changes attempting to move the current state towards the desired state.</li>
-        <li>cloud-controller-manager runs controllers that interact with the underlying cloud providers. Since cloud providers develop and release at a different pace compared to the Kubernetes project, the cloud-controller-manager allows the cloud vendor’s code and the Kubernetes code to evolve independently.</li>
-      </ul>
-      <img src="search_pics/Kubernetes_Node.png" style="width: 20%;">
-      <ul>
-        <li>Node- an instance of a computer that runs pods. Each node had Kubelet, which takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. Kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.</li>
-        <li>Pod- a set of running containers on your cluster</li>
-      </ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 50px;" class="topic">
-          Docker (containerization) vs Vagrant (virtual machine)</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px;">
-        <ul>
-        <li>What if you can run an application on your machine, but someone on another machine can't?</li>
-        <li>If you want to manage machines, you should use Vagrant. If you want to build and run applications environments, you should use Docker. 
-          Vagrant is a tool for managing virtual machines. Docker is a tool for building and deploying applications by packaging them into lightweight containers.</li>
-        </ul>
-        <h5 style="font-weight: bold;">Vagrant</h5>
-        <img src="search_pics/vagrant.png" style="width: 40%;">
-        <ul>
-          <li>Say you start with a fresh virtual machine, then you have a "provisioning script" which installs on the virtual machine all the extra software you need to run your application.</li>
-          <li>This "provisioning script" is also run on the staging server (server for development/testing) and production server (server to publish finished application) so that anyone can inintialize a virtual machine and run your application.</li>
-          <li>Now, someone can just take your project code from github and run your application from any virtual machine as long as they use the "provisioning script" to install everything.</li>
-        </ul>
-        <h5 style="font-weight: bold;">Docker</h5>
-        <img src="search_pics/docker.png" style="width: 40%;">
-        <ul>
-          <li>Docker uses a "dockerfile" to convert your project code and all installation requirements into a "docker image" (this image is essentially everything you need to run your application).</li>
-          <li>You then run this "docker image" as something called a "container", and you can run as many of these "containers" as you want on a single virtual machine (as long as you don't run out of memory).</li>
-          <li>You store your "docker image" on essentially a docker version of Github (like Docker Hub) and now any machine with Docker can run your applicatino using the "docker image".</li>
-          <li>Amazon's "ECS" (EC2 (elastic compute cloud) Container Service) platform can manage your containers for you.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+    <h1><a href="search_pages/Sufficient Statistic.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Sufficient Statistic </a>  </h1>
+
+    <h1><a href="search_pages/Confidence Intervals for Known Distributions and P.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Confidence Intervals, Pivotal Values, and Credible Intervals</a>  </h1>
+    
+    <h1><a href="search_pages/Bias Variance Decomposition.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Bias Variance Decomposition </a>  </h1>
+
+    <h1><a href="search_pages/Brief Look into Measure Theory.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Brief Look into Measure Theory </a>  </h1>
+
+    <h1><a href="search_pages/Hypothesis Testing.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Hypothesis Testing </a>  </h1>
+
+    <h1><a href="search_pages/What is Integration Really.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        What is integration really? </a>  </h1>
+
+    <h1><a href="https://medium.com/@andrew.chamberlain/a-simple-explanation-of-why-lagrange-multipliers-works-253e2cdcbf74" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Lagrangian Multipliers </a>  </h1>
+
+    <h1><a href="search_pages/Gaussian Process.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Gaussian Process </a>  </h1>
+
+    <h1><a href="https://medium.com/@blairlmarshall/how-do-miners-validate-transactions-c01b05f36231" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Bitcoin Mining (3Blue1Brown video is also very helpful)</a>  </h1>
+
+    <h1><a href="search_pages/Docker containerization vs Vagrant virtual machine.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Docker containerization vs Vagrant virtual machine </a>  </h1>
+
+    <h1><a href="search_pages/Kubernetes.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Kubernetes </a>  </h1>
+    
+    <h1><a href="search_pages/PAC Learning.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        PAC Learning </a>  </h1>
+    
+    <h1><a href="search_pages/Making Sense of a Betting Market with Probabilitie.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Making Sense of a Betting Market with Probabilities </a>  </h1>
+
+    <h1><a href="search_pages/Bootstrap.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Bootstrap</a> </h1>
+
+    <h1><a href="https://jaan.io/what-is-variational-autoencoder-vae-tutorial/" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Variational Autoencoder </a>  </h1>
+
+    <h1><a href="search_pages/EM Algorithm.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        EM Algorithm </a>  </h1>
+
+    <h1><a href="search_pages/Microservices vs Monolithic Architecture.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 35px;" class="topic">
+        Microservices vs Monolithic Architecture</a> </h1>
+    
 
 
-  </div>
-</div>
+    
+
 
 </body>
 </html>

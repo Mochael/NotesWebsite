@@ -10,9 +10,7 @@ A Dirichlet distribution is a distribution over probability vectors based on som
 - The Dirichlet distribution is a distribution over positive vectors that sum to one (probabilities).
 - Below shows what Dirichlet distributions with different parameters look like:
 
-
-
-| ![Dirichlet%20Process/Screen_Shot_2020-04-13_at_2.59.49_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_2.59.49_PM.png) | ![Dirichlet%20Process/Screen_Shot_2020-04-13_at_3.01.53_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_3.01.53_PM.png) |
+| ![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_2.59.49_PM.png) | ![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_3.01.53_PM.png) |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 |                                                              |                                                              |
 
@@ -48,7 +46,7 @@ $$\left(P\left(A_{1}\right), \ldots, P\left(A_{K}\right)\right) \sim \operatorna
 
 ### Relating to the Chinese Restaurant Process
 
-![Dirichlet%20Process/Screen_Shot_2020-04-13_at_9.14.40_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_9.14.40_PM.png)
+![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_9.14.40_PM.png)
 
 - Each partition $A_1,…,A_K$ represents a table at the restaurant
 - $P(A_i)$ is the probability mass of customers on table $i$ (e.g. $n_i/N$)
@@ -58,20 +56,16 @@ This could also be explained with the Polya Urn Process which is basically ident
 
 # Sampling from the DP
 
-![Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.03.20_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.03.20_PM.png)
-
-- The base measure $H$ does not influence the probability of a point joining that atom/class, it only influences the locations of the atoms (the value of the class) as shown in the graph above.
-
-![Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.00.46_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.00.46_PM.png)
-
-- These properties of alpha are true because this means that a new value is less likely to take on a new class value with a small alpha (see predictive distribution below)
+| ![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.03.20_PM.png) | ![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.00.46_PM.png) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| The base measure $H$ does not influence the probability of a point joining that atom/class, it only influences the locations of the atoms (the value of the class) as shown in the graph above. | These properties of alpha are true because this means that a new value is less likely to take on a new class value with a small alpha (see predictive distribution below) |
 
 # Predictive Distribution
 
 A new data point can either join an existing cluster, or start a new cluster. What is the predictive distribution for a new data point?
 
-![Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.15.17_PM.png](Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.15.17_PM.png)
+![DP](../search_pics/Dirichlet%20Process/Screen_Shot_2020-04-13_at_4.15.17_PM.png)
 
 ## Hierarchical Dirichlet Process/Chinese restaurant franchise
 
-[10-708 Lecture Notes](Dirichlet%20Process/lecture23-NPBayes-DP.pdf)
+[10-708 Lecture Notes](../search_pics/Dirichlet%20Process/lecture23-NPBayes-DP.pdf)

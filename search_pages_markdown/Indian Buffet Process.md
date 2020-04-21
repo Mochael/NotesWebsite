@@ -11,7 +11,7 @@
 
 ## The Process
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_12.11.00_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_12.11.00_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_12.11.00_PM.png)
 
 - $m_{k}$ is the number of previous customers who have sampled the dish.
 
@@ -21,14 +21,14 @@ $$\text{ If } Z \text{ follows this process then } Z \sim IBP(\alpha)$$
 
 - The Beta-Bernoulli model where we take the limit as the number of latent features goes to infinity describes the Indian Buffet Process
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.34_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.34_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.34_PM.png)
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.41_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.41_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.33.41_PM.png)
 
 ## Infinite Gamma-Poisson Process
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.16_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.16_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.16_PM.png)
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.26_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.26_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.22.26_PM.png)
 
-![Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.21.52_PM.png](Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.21.52_PM.png)
+![IBP](../search_pics/Indian%20Buffet%20Process/Screen_Shot_2020-04-15_at_1.21.52_PM.png)
