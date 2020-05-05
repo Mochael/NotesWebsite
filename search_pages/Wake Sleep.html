@@ -175,6 +175,7 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
     /* mathjax LaTex background for editing*/
     --new-color: #324560;
     --rawblock-edit-panel-bd: var(--new-color);
+
 }
 
 .dropdown-menu {
@@ -1033,6 +1034,14 @@ input {
 #write>p:only-child:empty::before {
     opacity: 1;
 }
+
+
+::selection {
+    background: blueviolet; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: blueviolet; /* Gecko Browsers */
+  }
 
 
 </style>
