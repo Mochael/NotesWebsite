@@ -16,7 +16,7 @@ In an October 2010 poll of likely voters, 52% of respondents said they opposed O
 - 15% preferred to leave it as is
 - 36% said Obamacare should be expanded to change the current health care system more than it currently does
 
-This suggests that many of the law’s opponents are to Obama’s left, not his right.
+This suggests that many of the law’s opponents are to Obama’s left, not his right (36% said it should be expanded although 37%+10% think the policy is too far left).
 
 Which of these news headlines are true:
 
@@ -74,7 +74,7 @@ In other words, a majority of voters liked the centrist candidate Montroll bette
 - Suppose those 495 voters who wrote “Wright, Kiss, Montroll” had decided to vote for Kiss instead, leaving the other two candidates off their ballot
 - And let’s say 300 of the Wright-only voters switch to Kiss too
 
-1. Wright now has 2502 first place votes so he gets eliminated
+1. Wright now has 2502 first place votes so he gets eliminated instead of Montroll
 2. The election then goes down to Montroll vs. Kiss, and Montroll wins, 4067–3777
 
-Basically if we give Wright more votes, he will end up losing the election.
+Basically if we give Kiss more votes, he will end up losing the election.
