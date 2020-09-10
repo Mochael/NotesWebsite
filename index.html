@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="JQueryUI.css">
 
   <link rel="icon" type="image/png" href="logo.png">
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300&family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- <link href="./pointer.css" rel="stylesheet"> -->
 <style>
 
 .logo img:hover {
@@ -84,8 +91,16 @@ a:hover {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  /*font-family: Arial, Helvetica, sans-serif;*/  
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+  font-size: 50px;
 }
 
 .topnav {
@@ -109,7 +124,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.75);
   color: black;
 }
 
@@ -147,10 +162,6 @@ canvas{
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-body {
-  color: white;
 }
 
 .img {
@@ -276,13 +287,6 @@ body {
 
 #container {
 	text-align: center;
-}
-
-#text {
-	display: inline-block;
-	vertical-align: middle;
-	color: white;
-  font-size: 50px;
 }
 
 #cursor {
@@ -437,7 +441,7 @@ body {
     </div>
 
     <div data-aos="fade-up" data-aos-duration="3000" style="padding-top: 0px; text-align: center;">
-      <div class='main' id="thisone1"> Michael Kronovet </div>
+      <div class='main' id="thisone1" style="font-weight: bolder; color: white;"> Michael Kronovet </div>
       
     </div>
 
@@ -449,8 +453,7 @@ body {
 for (var randNums=[],i=0;i<40;++i) randNums[i]= Math.floor(Math.random() * 10); 
 // List of sentences
 var _CONTENT = [
-  "Student", "Data Scientist", "Software Engineer",
-	"Student | Data Scientist | Software Engineer"
+  "Data Scientist and Software Enthusiast"
 ];
 
 // Current sentence being processed
@@ -525,15 +528,16 @@ _INTERVAL_VAL = setInterval(Type, 100);
       
       <!-- <img src="myPic.jpg" class="animation-target" style="width:200px">--> 
 
-				<p id="p" style="margin-left: 50px; margin-right: 50px; padding-bottom: 0px; padding-top: 25px; text-align: center;">
-          I am an aspiring data scientist and software engineer from Charlotte, North Carolina. 
-          I am 21 years old and a recent graduate from Carnegie Mellon University where I studied statistics and machine learning. 
-          In my free time I enjoy playing sports and exercising, developing open source personal projects, and reading (check out my <a style="text: white;" href='https://www.goodreads.com/user/show/84859492-michael-kronovet' target="_blank">goodreads</a>!). 
-          This website is a personal project where I can explore some of my interests in design and reference some of my notes from school (class notes).
-          Reach out to me via email or LinkedIn (provided at the footer) if you want to talk about anything on my website or you want to connect! 
-          I also have a <a style="text: white;" href='https://objective-lichterman-c6fcac.netlify.app' target="_blank">website here</a> where I store my notes if you are interested.
-        </p>
+				<p id="p" style="margin-left: 50px; margin-right: 50px; padding-bottom: 0px; padding-top: 25px; text-align: left; font-size: 25px;">
+          I am data scientist from Charlotte, North Carolina who is currently exploring the domain of causal inference. <br> <br>
 
+          In my free time I enjoy playing sports, designing software, and I am also an avid reader: check out my <a style="text: white; font-size: 25px;" href='https://www.goodreads.com/user/show/84859492-michael-kronovet' target="_blank">goodreads</a>! <br> <br>
+
+          I use this website to explore some of my interests in design and reference my <a style="text: white; font-size: 25px;" href='notes.html'>old notes from college</a> and <a style="text: white; font-size: 25px;" href='projects.html'>personal projects</a>. I also started a <a style="text: white; font-size: 25px;" href='https://objective-lichterman-c6fcac.netlify.app' target="_blank">digital garden</a> where I store and tend my current notes. <br> <br>
+
+          Reach out to me via email or LinkedIn (provided at the footer) if you want to talk about anything on my website or you want to connect! <br>
+
+        </p>
 
     <div style="padding-top: 100px;"></div>
 
@@ -549,8 +553,16 @@ _INTERVAL_VAL = setInterval(Type, 100);
     <a href="https://www.linkedin.com/in/michael-kronovet" class="fa fa-linkedin"></a>
     <a href="https://github.com/Mochael" class="fa fa-github"></a>
     <a href="mailto:mkronovet@gmail.com" class="fa fa-envelope"></a>
-  </div>
-  </body>
-
+   </div>
 </body>
-</html>
+
+
+<!-- 
+<script src="./pointer.js"></script>
+    <script>
+        init_pointer({
+            
+        })
+    </script>
+    
+</html> -->
