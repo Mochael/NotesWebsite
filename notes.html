@@ -121,6 +121,43 @@ a:active {
     opacity: 0.7;
 }
 
+.panel-group{
+  padding-top: 80px;
+}
+
+.topic{
+  font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 767px) {
+  .topnav {
+    background-color: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+  }
+  .topnav a {
+    padding: 12px 6px; /* Adjusted padding for smaller screens */
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    text-align: center;
+  }
+  .fa {
+    font-size: 30px; /* Adjusted font size for icons on smaller screens */
+  }
+  .topic {
+    font-size: 18px; margin-left: 10px; margin-right: 5px;
+  }
+  .panel-group{
+    padding-top: 45px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -141,34 +178,34 @@ a:active {
     AOS.init();
 </script>
 <div data-aos="fade-up" data-aos-duration="2000">
-<div class="panel-group" id="accordion" style ="padding-top: 80px;">
+<div class="panel-group" id="accordion">
    
-  <h1><a href="https://www.cs.cmu.edu/~epxing/Class/10708-20/lectures.html" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Probabilistic Graphical Models</a></h1>
+  <div><a href="https://www.cs.cmu.edu/~epxing/Class/10708-20/lectures.html" target="_blank" class="topic">
+    Probabilistic Graphical Models</a></div>
 
-  <h1><a href="https://drive.google.com/drive/u/0/folders/1yvb1YB1ZVw-NROFZnDEmxKXvdNXZEQdV" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Convex Optimization</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/1yvb1YB1ZVw-NROFZnDEmxKXvdNXZEQdV" target="_blank" class="topic">
+    Convex Optimization</a></div>
 
-  <h1><a href="https://drive.google.com/drive/folders/1l0gddKl2WKPJ8w9tO1fv-VAlBGjARhcb" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Advanced Algorithms and Data Structures</a></h1>
+  <div><a href="https://drive.google.com/drive/folders/1l0gddKl2WKPJ8w9tO1fv-VAlBGjARhcb" target="_blank" class="topic">
+    Advanced Algorithms and Data Structures</a></div>
 
-  <h1><a href="https://drive.google.com/drive/u/0/folders/1IdTX6E0BX7BMEL-MEMJY1hWi-K0K00Pd" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Modern Regression</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/1IdTX6E0BX7BMEL-MEMJY1hWi-K0K00Pd" target="_blank" class="topic">
+    Modern Regression</a></div>
   
-  <h1><a href="https://drive.google.com/drive/u/0/folders/14vt63xOGP-1HJMYVey9WNSv610NJ3xCk" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Intro to Machine Learning</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/14vt63xOGP-1HJMYVey9WNSv610NJ3xCk" target="_blank" class="topic">
+    Intro to Machine Learning</a></div>
 
-  <h1><a href="https://drive.google.com/drive/u/0/folders/1jUT-HW4c6Ao42pyfFQhearlYlx1agu_Y" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Data Mining</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/1jUT-HW4c6Ao42pyfFQhearlYlx1agu_Y" target="_blank" class="topic">
+    Data Mining</a></div>
 
-  <h1><a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Advanced Data Analysis</a></h1>
+  <div><a href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/" target="_blank" class="topic">
+    Advanced Data Analysis</a></div>
 
-  <h1><a href="https://drive.google.com/drive/u/0/folders/1OkUd4AqGDvaRtCZtrqplUXE7glybD0a5" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Intro to Math Finance</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/1OkUd4AqGDvaRtCZtrqplUXE7glybD0a5" target="_blank" class="topic">
+    Intro to Math Finance</a></div>
 
-  <h1><a href="https://drive.google.com/drive/u/0/folders/18Qr-kvpM3t3eB_a-BNKJ9A0kaUutGx_i" target="_blank" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;" class="topic">
-    Causal Inference</a></h1>
+  <div><a href="https://drive.google.com/drive/u/0/folders/18Qr-kvpM3t3eB_a-BNKJ9A0kaUutGx_i" target="_blank" class="topic">
+    Causal Inference</a></div>
 
   </div>
 </div>
