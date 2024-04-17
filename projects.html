@@ -115,8 +115,6 @@ a:active {
   color: white;
 }
 
-
-
 .group:after {
   content: "";
   display: table;
@@ -142,6 +140,57 @@ a:active {
   padding-bottom: 0vw;
 }
 
+.panel-title{
+  font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;
+}
+
+.panel-body{
+  margin-left: 25px; margin-right: 25px; padding-right: 10vw;
+}
+
+.panel-group{
+  padding-top: 80px;
+}
+
+.media-content{
+  margin-left: 15%; padding-top: 5vh;
+}
+
+.media-content iframe{
+  width: 30vw; height: 30vh
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 767px) {
+  .topnav {
+    background-color: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+  }
+  .topnav a {
+    padding: 12px 6px; /* Adjusted padding for smaller screens */
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    text-align: center;
+  }
+  .fa {
+    font-size: 30px; /* Adjusted font size for icons on smaller screens */
+  }
+  .panel-title a {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 10px;
+  }
+  .panel-group{
+    padding-top: 50px;
+  }
+}
 </style>
   </head>
   <body>
@@ -162,41 +211,18 @@ a:active {
     AOS.init();
 </script>
 <div data-aos="fade-up" data-aos-duration="2000">
-<div class="panel-group" id="accordion" style ="padding-top: 80px;">
-
-<!-- <div class="panel panel-default">
-  <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse15" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
-        Should I Buy a House Calculator</a>
-      <a href="https://share.streamlit.io/mochael/should-i-buy-a-house/main.py" class="fa fa-money" style="font-size: 2.75vw;"></a>
-    </h4>
-  </div>
-  <div id="collapse15" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
-          <div class="group">
-              <div class="text">
-                I was curious to see the difference in asset values if one was to purchase a house as opposed to renting one, so I built a calculator to plug in your rent/house information and generate a financial report for you to evaluate whether it's worth to buy the house. 
-                I general I found that you could make slightly more money buying a house than investing that same money elsewhere, mostly due to the high amount of leverage that taking a mortgage from the bank gives you.
-              </div>
-              <div class="images">
-                  
-              </div>
-          </div>
-      </div>
-  </div>
-</div> -->
+<div class="panel-group" id="accordion">
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse15" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse16">
         Company Offer Valuation App</a>
-      <a href="https://share.streamlit.io/mochael/company-salary-valuation/main.py" class="fa fa-money" style="font-size: 2.75vw;"></a>
-    </h4>
+      <a href="https://share.streamlit.io/mochael/company-salary-valuation/main.py" class="fa fa-money"></a>
+      </div>
   </div>
-  <div id="collapse15" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+  <div id="collapse16" class="panel-collapse collapse in">
+      <div class="panel-body">
           <div class="group">
               <div class="text">
                 When I was interviewing in January 2022, I received offers from a mix of public and private companies at different stages of funding. I found it incredibly difficult to compare the offers between public companies that were offering RSUs (restricted stock units) and private companies that were giving me stock options, so I decided to build this app that would help me better understand and compare my offers. 
@@ -212,14 +238,36 @@ a:active {
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse14" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse15">
+        Databased Perspectives</a>
+      <a href="https://www.databasedperspectives.com/" class="fa fa-bar-chart"></a>
+    </div>
+  </div>
+  <div id="collapse15" class="panel-collapse collapse in">
+      <div class="panel-body">
+          <div class="group">
+              <div class="text">
+                Frustrated with the bias, data inaccessiblity, and pedantic nature of current political statistical analyses, Kodi Obika and I worked together to create a website that provides a dataset repository of collated open source political data and also straightforward statistical analysis of current events and politics using this data.
+              </div>
+              <div class="images">
+                  
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse14">
         Whim</a>
-      <a href="https://whim.so/" class="fa fa-sticky-note" style="font-size: 2.75vw;"></a>
-    </h4>
+      <a href="https://whim.so/" class="fa fa-sticky-note"></a>
+    </div>
   </div>
   <div id="collapse14" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+      <div class="panel-body" >
           <div class="group">
               <div class="text">
                 Whim is a note taking web app designed to support the way our brains organize data and make connections between ideas. I am currently developing Whim with Tanishq Kancharla, and we have an early read-only version of the webapp published at whim.so.
@@ -234,14 +282,14 @@ a:active {
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse13" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse13" >
         Notion Slides</a>
-      <a href="https://chrome.google.com/webstore/detail/notion-slide-shows/hmcfamnbfmaaogikhpkmgkanecnkpkpa?hl=en&authuser=0" class="fa fa-chrome" style="font-size: 2.75vw;"></a>
-    </h4>
+      <a href="https://chrome.google.com/webstore/detail/notion-slide-shows/hmcfamnbfmaaogikhpkmgkanecnkpkpa?hl=en&authuser=0" class="fa fa-chrome" ></a>
+    </div>
   </div>
   <div id="collapse13" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+      <div class="panel-body" >
           <div class="group">
               <div class="text">
                 Notion Slides is a google chrome extension that allows users to navigate notion databases in a slide show. Tanishq Kancharla and I were frustrated by the clunkiness of popular slide show creation tools like Powerpoint and Google Slides and wanted to tweak some of the limitations imposed by these tools. We adapted Notion's clean and minimialistic UI to support creating slide shows in a way that was consistent with our design principles: slides are not limited in the amount of content they can show, content like youtube videos and websites can be embedded within a slide, and formatting is automatic with markdown. Unfortunately the way the chrome extension operates is not ideal since Notion was not desiged to support slide shows, nonetheless I think the chrome extension is a step forward in how slide shows should be built and designed.
@@ -256,20 +304,20 @@ a:active {
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse12" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse12" >
         Time Varying Graphs with NOTEARS</a>
-    </h4>
+    </div>
   </div>
   <div id="collapse12" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+      <div class="panel-body" >
           <div class="group">
               <div class="text">
                   I worked with Maxwell Wang, Wuwei Lin, and Chang Shi to adapt an existing DAG structure estimation algorithm called NOTEARS to time series data. 
               </div>
-              <div style="margin-left: 15%; padding-top: 5vh;">
-                <iframe src="videos/10708project.pdf" style="width: 30vw; height: 30vh"></iframe>
-                <iframe src="https://www.youtube.com/embed/RDtl45kxzUE" style="width: 30vw; height: 30vh" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="media-content">
+                <iframe src="videos/10708project.pdf"></iframe>
+                <iframe src="https://www.youtube.com/embed/RDtl45kxzUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               <div class="images">
                   
@@ -281,13 +329,13 @@ a:active {
 
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4 class="panel-title">
-      <a data-toggle="collapse" data-parent="#accordion" href="#collapse11" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+    <div class="panel-title">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapse11" >
         Optimal Treatent Regimes</a>
-    </h4>
+    </div>
   </div>
   <div id="collapse11" class="panel-collapse collapse in">
-      <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+      <div class="panel-body" >
           <div class="group">
               <div class="text">
                   I wrote a report reviewing recent literature on optimal treatment regimes in the causal inference community.
@@ -305,14 +353,14 @@ a:active {
 
     <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+          <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse10" >
               Song Year Prediction</a>
-              <a href="https://github.com/tklightningfast/10701SongProject" class="fa fa-github" style="font-size: 2.75vw;"></a>
-          </h4>
+              <a href="https://github.com/tklightningfast/10701SongProject" class="fa fa-github" ></a>
+          </div>
         </div>
         <div id="collapse10" class="panel-collapse collapse in">
-            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+            <div class="panel-body" >
                 <div class="group">
                     <div class="text">
                         I worked with Tanishq Kancharla to build a regression model that would predict the year a song was released just based on some of the song's musical factors and some of its lyrics. 
@@ -331,14 +379,14 @@ a:active {
 
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+        <div class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" >
             Website Prototyping System</a>
-            <a href="https://github.com/CandiaGu/PennAppsF18" class="fa fa-github" style="font-size: 2.75vw;"></a>
-        </h4>
+            <a href="https://github.com/CandiaGu/PennAppsF18" class="fa fa-github" ></a>
+        </div>
       </div>
       <div id="collapse3" class="panel-collapse collapse">
-          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+          <div class="panel-body" >
               <div class="group">
                   <div class="text">
                       I worked with Bradley Zhou, Candia Gu, and Aditi Hebbar to build an app that would automatically create html code from drawings on a sheet of paper. 
@@ -356,14 +404,14 @@ a:active {
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+          <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" >
               Automated Logo Generator</a>
-              <a href="https://github.com/Mochael/Automated-Logo-Generator" class="fa fa-github" style="font-size: 2.75vw;"></a>
-          </h4>
+              <a href="https://github.com/Mochael/Automated-Logo-Generator" class="fa fa-github" ></a>
+          </div>
         </div>
         <div id="collapse4" class="panel-collapse collapse">
-            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+            <div class="panel-body" >
                 <div class="group">
                     <div class="text">
                         I worked with Evann Wu, Ka Chun Cheung, and Tanishq Kancharla to build an app that would take in an image from a user, as well as certain visual preferences, and automatically output a logo based on their input. 
@@ -380,14 +428,14 @@ a:active {
       </div>
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+        <div class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" >
             Professor Doppleganger</a>
-            <a href="https://github.com/Mochael/ProfessorDoppleganger" class="fa fa-github" style="font-size: 2.75vw;"></a>
-        </h4>
+            <a href="https://github.com/Mochael/ProfessorDoppleganger" class="fa fa-github" ></a>
+        </div>
       </div>
       <div id="collapse5" class="panel-collapse collapse">
-          <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+          <div class="panel-body" >
               <div class="group">
                   <div class="text">
                       I worked with Evann Wu and Tanishq Kancharla to create a website using Django that would take in an image url and match it with a CMU professor who looked the most similar to the individual in the given picture. 
@@ -402,11 +450,11 @@ a:active {
     </div>
     <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+          <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" >
             Intellichess</a>
-            <a href="https://github.com/Mochael/Chess-Game" class="fa fa-github" style="font-size: 2.75vw;"></a>
-          </h4>
+            <a href="https://github.com/Mochael/Chess-Game" class="fa fa-github" ></a>
+          </div>
         </div>
         <div id="collapse6" class="panel-collapse collapse">
             <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 10vw;">
@@ -427,14 +475,14 @@ a:active {
       </div>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h4 class="panel-title">
-            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+          <div class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" >
             GunAR</a>
-            <a href="https://github.com/Mochael" class="fa fa-github" style="font-size: 2.75vw;"></a>
-          </h4>
+            <a href="https://github.com/Mochael" class="fa fa-github" ></a>
+          </div>
         </div>
         <div id="collapse7" class="panel-collapse collapse">
-            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 0px;">
+            <div class="panel-body" >
                 <div class="group">
                     <div class="text">
                         I worked with Alex Li, Evann Wu, and Tanishq Kancharla to develop GunAR for CMU's Build18 competition. 
@@ -452,10 +500,10 @@ a:active {
       </div>
       <div class="panel panel-default">
       <div class="panel-heading">
-        <h4 class="panel-title">
-          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" style="font-weight: bold; margin-left: 25px; margin-right: 25px; font-size: 2.75vw;">
+        <div class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9" >
             Muon Scattering Tomography</a>
-        </h4>
+        </div>
       </div>
       <div id="collapse9" class="panel-collapse collapse in">
         
