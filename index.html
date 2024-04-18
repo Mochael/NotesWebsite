@@ -162,34 +162,26 @@ canvas{
 
 .img {
   opacity: 0;
-  display: none;
   border-radius: 100%;
-  /* width:200px;*/
-  /* width:14.45%; */
   width: 15vw;
   height: auto;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  margin-left: 43%;
-	margin-right: 43%;
-}
+  margin-left: 42.5%;
+	margin-right: 42.5%;
+  display: none;
+  align-items: center;
 
+}
 .img img {
-  display: inline-block;
   width:100%;
   height: auto;
   border-radius: 50%;
 }
 
 .img__overlay {
-  /*align-items: center;
-  justify-content: center;
-  z-index: 1;
-  */
-
   bottom: 0;
-  /*display: flex;*/
   display: inline-block;
   left: 0;
   opacity: 0;
@@ -313,51 +305,53 @@ canvas{
 }
 
 .personal-description{
-  margin-left: 7.5%; margin-right: 7.5%; padding-bottom: 0px; padding-top: 25px; text-align: left; font-size: 1.6vw;
+  padding-left: 50px; padding-right: 50px;
+  padding-bottom: 0px; padding-top: 25px; text-align: left; font-size: 1.6vw;
 }
 
 .logo img{
   width: 10vw; left: -0px; position: relative; display: block; margin-left: auto; margin-right: auto;
 }
 
+.socials{
+  width: 100%; bottom: 0; justify-content: center; position: absolute;
+}
+
 /* Adjustments for smaller screens */
 @media screen and (max-width: 767px) {
   .topnav {
-    background-color: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
     height: 40px;
-    display: flex;
-    justify-content: center; /* Horizontally center the items */
   }
   .topnav a {
-    padding: 12px 6px; /* Adjusted padding for smaller screens */
-    font-size: 12px; /* Adjusted font size for smaller screens */
+    padding: 12px 6px;
+    font-size: 12px;
     text-align: center;
   }
   .fa {
-    font-size: 20px; /* Adjusted font size for icons on smaller screens */
+    font-size: 20px;
   }
   .text {
     font-size: 10px;
   }
   .personal-description {
     font-size: 15px;
+    text-align: left;
+    padding-left: 20px; padding-right: 20px;
   }
   .logo img{
     width: 75px;
   }
 
+  
   .img {
     width: 100px;
+    margin-left: 38.5%;
+	  margin-right: 38.5%;
   }
 
   #imtxt {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 28%;
   }
 
@@ -374,12 +368,13 @@ canvas{
   {
     font-size: 11vw;
   }
+  
 }
 </style>
 </head>
 <body>
 <!-- Update text when replacing resume -->
-<div class="topnav sticky-top">
+<div class="topnav">
   <a class="active" href="index.html">Home</a>
   <a href="resume.pdf" target="_blank">Resume </a>
   <a href="projects.html">Projects</a>
@@ -398,81 +393,7 @@ canvas{
     AOS.init();
   </script>
   <script>
-
-      function fadeIn(element) {
-        element.style.opacity = "0"; 
-        element.style.display = "block"; 
-        var op = 0.1;  // initial opacity
-        var pos = 0;
-        var timer = setInterval(function () {
-            if (op >= 1){
-                clearInterval(timer);
-            }
-            element.style.opacity = op;
-            element.style.top = pos + 'px';
-            pos++;
-            op += 0.1;
-        }, 100);
-      }
-
-      function fadeOutAndfadeIn(origObj1, origObj15, origObj2, obj1, obj2){
-      var opacity = 1;
-      var pos = origObj1.style.top;
-      var timer = setInterval(function(){
-        if(opacity < 0.1){
-          clearInterval(timer);
-          origObj1.style.display = "none"; 
-          origObj15.style.display = "none"; 
-          origObj2.style.display = "none"; 
-          //swap the image, and fadeIn, which is the same as above function
-          
-          fadeIn(obj2);
-
-          fadeIn(obj1);
-        }
-        origObj1.style.opacity = opacity;
-        origObj15.style.opacity = opacity;
-        origObj2.style.opacity = opacity;
-        opacity -=  0.1;
-        origObj1.style.top = (origObj1.style.top-100)+'px';
-        origObj15.style.top = (origObj15.style.top-100)+'px';
-        origObj2.style.top = (origObj2.style.top-100)+'px';
-
-        console.log(origObj1.style.pos);
-
-      }, 1000);
-      }
-
-    function waithide()
-    {
-      var origObj1 = document.getElementById("thisone1");
-      var origObj15 = document.getElementById("thisone2");
-      var origObj2 = document.getElementById("container");
-      var obj1 = document.getElementById("p");
-      var obj2 = document.getElementById("img");
-      
-      fadeOutAndfadeIn(origObj1, origObj15, origObj2, obj1, obj2);
-    }
-  </script>
-
-  <script>
     function animateButton() {
-      var origObj1 = document.getElementById("thisone1");
-      var origObj15 = document.getElementById("thisone2");
-      var origObj2 = document.getElementById("container");
-      var obj1 = document.getElementById("p");
-      var obj2 = document.getElementById("img");
-      if(false){
-        $("#img").animate({ height: 'toggle', opacity: 0 }, 'slow');
-        $("#p").animate({ height: 'toggle', opacity: 0 }, 'slow');
-        $("#thisoneNew").animate({ height: 'toggle', opacity: 0 }, 'slow');
-        setTimeout(function(){
-          $("#thisone1").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
-          $("#thisone2").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
-          $("#container").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
-        }, 1000);
-      }
-      else{
         $("#thisone1").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
         $("#thisone2").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
         $("#container").animate({ height: 'toggle', opacity: 'toggle' }, 'slow');
@@ -481,13 +402,8 @@ canvas{
           $("#p").animate({ height: 'toggle', opacity: 1 }, 'slow');
           $("#thisoneNew").animate({ height: 'toggle', opacity: 1 }, 'slow');
         }, 1000);
-      }
-      
-
       };
   </script>
-
-  
 
       <div data-aos="fade-up" data-aos-duration="2000" style="padding-top: 120px;">
 
@@ -512,7 +428,7 @@ canvas{
 for (var randNums=[],i=0;i<40;++i) randNums[i]= Math.floor(Math.random() * 10); 
 // List of sentences
 var _CONTENT = ['','',
-  "Data Scientist / Software Engineer", "Click the logo to learn a little more about me!"
+  "Data Scientist / Software Engineer", "Click the logo to learn more about me!"
 ];
 
 // Current sentence being processed
@@ -609,7 +525,7 @@ _INTERVAL_VAL = setInterval(Type, 100);
     </div>
     
 
-  <div align="center" style="width: 100%; bottom: 0; position: fixed;">
+  <div class="socials" align="center">
     <a href="https://www.linkedin.com/in/michael-kronovet" class="fa fa-linkedin"></a>
     <a href="https://github.com/Mochael" class="fa fa-github"></a>
     <a href="mailto:mkronovet@gmail.com" class="fa fa-envelope"></a>
