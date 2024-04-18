@@ -127,6 +127,10 @@ a:active {
   font-size: 1.25vw;
 }
 
+.media-links{
+  font-size: 1.25vw;
+}
+
 .images {
   float: left;
   width: .1%;
@@ -150,14 +154,6 @@ a:active {
   padding-top: 80px;
 }
 
-.media-content{
-  margin-left: 20px; padding-top: 40px;
-}
-
-.media-content iframe{
-  width: 500px; height: 400px;
-}
-
 /* Adjustments for smaller screens */
 @media screen and (max-width: 767px) {
   .topnav {
@@ -179,6 +175,15 @@ a:active {
   .fa {
     font-size: 30px; /* Adjusted font size for icons on smaller screens */
   }
+
+  .panel-title{
+    font-weight: bold; margin-left: 15px; margin-right: 20px;
+  }
+
+  .panel-body{
+    margin-left: 15px; margin-right: 20px;
+  }
+
   .panel-title a {
     font-size: 18px;
   }
@@ -188,16 +193,9 @@ a:active {
   .panel-group{
     padding-top: 45px;
   }
-  .panel-body{
-    padding-right: 0vw;
-  }
 
-  .media-content{
-    margin-left: 0px;
-  }
-
-  .media-content iframe{
-    width: 300px; height: 200px;
+  .media-links{
+    font-size: 14px;
   }
 }
 </style>
@@ -315,9 +313,9 @@ a:active {
               <div class="text">
                   I worked with Maxwell Wang, Wuwei Lin, and Chang Shi to adapt an existing DAG structure estimation algorithm called NOTEARS to time series data. 
               </div>
-              <div class="media-content">
-                <iframe src="videos/10708project.pdf"></iframe>
-                <iframe src="https://www.youtube.com/embed/RDtl45kxzUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="media-links">
+                <a href="videos/10708project.pdf">&#x2197; Link to paper</a> <br>
+                <a href="https://www.youtube.com/embed/RDtl45kxzUE">&#x2197; Video explanation</a>
               </div>
           </div>
       </div>
@@ -337,8 +335,8 @@ a:active {
               <div class="text">
                   I wrote a report reviewing recent literature on optimal treatment regimes in the causal inference community.
               </div>
-              <div class="media-content">
-                <iframe src="videos/Causal_Inference_Final.pdf"></iframe>
+              <div class="media-links">
+                <a href="videos/Causal_Inference_Final.pdf">&#x2197; Link to paper</a> <br>
               </div>
           </div>
       </div>
@@ -360,8 +358,8 @@ a:active {
                         I worked with Tanishq Kancharla to build a regression model that would predict the year a song was released just based on some of the song's musical factors and some of its lyrics. 
                         We determined that predictive ability of the lyrics was much worse than the musical factors for a given song. Our final paper is shown below.
                     </div>
-                    <div class="media-content">
-                      <iframe src="videos/10701FinalProject.pdf"></iframe>
+                    <div class="media-links">
+                      <a href="videos/10701FinalProject.pdf">&#x2197; Link to paper</a> <br>
                     </div>
                 </div>
             </div>
@@ -439,7 +437,7 @@ a:active {
           </div>
         </div>
         <div id="collapse6" class="panel-collapse collapse">
-            <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 10vw;">
+            <div class="panel-body">
                 <div class="group">
                     <div class="text">
                         This was the final project for my introductory programming class at CMU, 15-112. 
@@ -448,8 +446,8 @@ a:active {
                         I trained my neural network to match the board evaluations given by the famous chess engine Stockfish, using a database of grandmaster games in .pgn formatting. I made the neural network entirely by myself (without a library), so it was not very skilled at playing chess and was pretty slow at making a decision. 
                         I used sockets to implement multiplayer in the game.
                     </div>
-                    <div class="media-content">
-                      <iframe src="https://www.youtube.com/embed/_CEE_5XILdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media-links">
+                      <a href="https://www.youtube.com/embed/_CEE_5XILdA">&#x2197; Video explanation</a> <br>
                     </div>
                   </div>
             </div>
@@ -485,7 +483,7 @@ a:active {
         </div>
       </div>
       <div id="collapse9" class="panel-collapse collapse in">
-        <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 10vw;">
+        <div class="panel-body">
             <div class="group">
                 <div class="text">
                     I worked with Trevor Daino and Arpad Voros to design a new way to detect the trajectory of high energy muon particles for the purposes of muon tomography. We had read a few papers about how vaccuum tubes were being used to measure the trajectory of muons to capture images of materials. 
@@ -497,15 +495,12 @@ a:active {
                     Eventually we presented our findings at the Intel International Science and Engineering Fair (ISEF) where we placed 3rd in the Physics and Astronomy category! 
                     You can learn more about what we built from <a href="https://www.triwnews.com/featured/marvin-ridge-high-seniors-win-third-place-in-international-science-competition/">this article</a> in the local paper. Also, the poster we displayed at ISEF is shown below!
                 </div>
-              <div class="media-content">
-                <video controls>
-                  <source src="videos/IntelAwards.mp4" type="video/mp4">
-                </video>
-                <br>
-                <iframe src="videos/isef_leftPanel.pdf"></iframe>
-                <iframe src="videos/isef_middlePanel.pdf"></iframe>
-                <iframe src="videos/isef_rightPanel.pdf"></iframe>
-              </div>
+                <div class="media-links">
+                  <a href="videos/IntelAwards.mp4">&#x2197; Video of award ceremony</a> <br>
+                  <a href="videos/isef_leftPanel.pdf">&#x2197; Poster write up left panel</a> <br>
+                  <a href="videos/isef_middlePanel.pdf">&#x2197; Poster write up middle panel</a> <br>
+                  <a href="videos/isef_rightPanel.pdf">&#x2197; Poster write up right panel</a> <br>
+                </div>
               </div>
           </div>
       </div>
