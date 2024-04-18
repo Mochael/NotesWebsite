@@ -124,8 +124,6 @@ a:active {
 .text {
   float: left;
   width: 99.9%;
-  padding-left: 0%;
-  padding-right: 5%;
   font-size: 1.25vw;
 }
 
@@ -145,7 +143,7 @@ a:active {
 }
 
 .panel-body{
-  margin-left: 25px; margin-right: 25px; padding-right: 10vw;
+  margin-left: 25px; margin-right: 40px;
 }
 
 .panel-group{
@@ -153,11 +151,11 @@ a:active {
 }
 
 .media-content{
-  margin-left: 15%; padding-top: 5vh;
+  margin-left: 20px; padding-top: 40px;
 }
 
 .media-content iframe{
-  width: 30vw; height: 30vh
+  width: 500px; height: 400px;
 }
 
 /* Adjustments for smaller screens */
@@ -192,6 +190,14 @@ a:active {
   }
   .panel-body{
     padding-right: 0vw;
+  }
+
+  .media-content{
+    margin-left: 0px;
+  }
+
+  .media-content iframe{
+    width: 300px; height: 200px;
   }
 }
 </style>
@@ -253,9 +259,6 @@ a:active {
               <div class="text">
                 Frustrated with the bias, data inaccessiblity, and pedantic nature of current political statistical analyses, Kodi Obika and I worked together to create a website that provides a dataset repository of collated open source political data and also straightforward statistical analysis of current events and politics using this data.
               </div>
-              <div class="images">
-                  
-              </div>
           </div>
       </div>
   </div>
@@ -275,9 +278,6 @@ a:active {
               <div class="text">
                 Whim is a note taking web app designed to support the way our brains organize data and make connections between ideas. I am currently developing Whim with Tanishq Kancharla, and we have an early read-only version of the webapp published at whim.so.
               </div>
-              <div class="images">
-                  
-              </div>
           </div>
       </div>
   </div>
@@ -296,9 +296,6 @@ a:active {
           <div class="group">
               <div class="text">
                 Notion Slides is a google chrome extension that allows users to navigate notion databases in a slide show. Tanishq Kancharla and I were frustrated by the clunkiness of popular slide show creation tools like Powerpoint and Google Slides and wanted to tweak some of the limitations imposed by these tools. We adapted Notion's clean and minimialistic UI to support creating slide shows in a way that was consistent with our design principles: slides are not limited in the amount of content they can show, content like youtube videos and websites can be embedded within a slide, and formatting is automatic with markdown. Unfortunately the way the chrome extension operates is not ideal since Notion was not desiged to support slide shows, nonetheless I think the chrome extension is a step forward in how slide shows should be built and designed.
-              </div>
-              <div class="images">
-                  
               </div>
           </div>
       </div>
@@ -322,9 +319,6 @@ a:active {
                 <iframe src="videos/10708project.pdf"></iframe>
                 <iframe src="https://www.youtube.com/embed/RDtl45kxzUE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="images">
-                  
-              </div>
           </div>
       </div>
   </div>
@@ -343,11 +337,8 @@ a:active {
               <div class="text">
                   I wrote a report reviewing recent literature on optimal treatment regimes in the causal inference community.
               </div>
-              <div style="margin-left: 15%; padding-top: 5vh;">
-                <iframe src="videos/Causal_Inference_Final.pdf" style="width: 30vw; height: 30vh"></iframe>
-              </div>
-              <div class="images">
-                  
+              <div class="media-content">
+                <iframe src="videos/Causal_Inference_Final.pdf"></iframe>
               </div>
           </div>
       </div>
@@ -369,11 +360,8 @@ a:active {
                         I worked with Tanishq Kancharla to build a regression model that would predict the year a song was released just based on some of the song's musical factors and some of its lyrics. 
                         We determined that predictive ability of the lyrics was much worse than the musical factors for a given song. Our final paper is shown below.
                     </div>
-                    <div style="margin-left: 15%; padding-top: 5vh;">
-                        <iframe src="videos/10701FinalProject.pdf" style="width: 30vw; height: 30vh"></iframe>
-                    </div>
-                    <div class="images">
-                        
+                    <div class="media-content">
+                      <iframe src="videos/10701FinalProject.pdf"></iframe>
                     </div>
                 </div>
             </div>
@@ -398,9 +386,6 @@ a:active {
                       We used OpenCV to extract and differentiate between meaningful components (such as text and images) from the drawing and turn them into HTML. 
                       We then sent the HTML to be rendered and displayed on a website via a Flask API.
                   </div>
-                  <div class="images">
-                      
-                  </div>
                 </div>
           </div>
       </div>
@@ -422,9 +407,6 @@ a:active {
                         We also use this data to generate a brand name for the logo. 
                         Once we have the manipuated image and brand name our code determines a pleasing way to orient them and outputs a logo.
                     </div>
-                    <div class="images">
-                        
-                    </div>
                   </div>
             </div>
         </div>
@@ -443,9 +425,6 @@ a:active {
                   <div class="text">
                       I worked with Evann Wu and Tanishq Kancharla to create a website using Django that would take in an image url and match it with a CMU professor who looked the most similar to the individual in the given picture. 
                       We used the Microsoft Azure API to extract traits from the input image and then matched the image with the person who had the most similar traits in CMU's faculty database.
-                  </div>
-                  <div class="images">
-                      
                   </div>
                 </div>
           </div>
@@ -469,8 +448,8 @@ a:active {
                         I trained my neural network to match the board evaluations given by the famous chess engine Stockfish, using a database of grandmaster games in .pgn formatting. I made the neural network entirely by myself (without a library), so it was not very skilled at playing chess and was pretty slow at making a decision. 
                         I used sockets to implement multiplayer in the game.
                     </div>
-                    <div class="images">
-                        <iframe style="width: 30vw; height: 30vh" src="https://www.youtube.com/embed/_CEE_5XILdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media-content">
+                      <iframe src="https://www.youtube.com/embed/_CEE_5XILdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
             </div>
@@ -494,9 +473,6 @@ a:active {
                         We had a competitive mode where players could play against each other and a single player mode where virtual reality targets were spawned for the user to shoot at. 
                         Unfortunately we ran out of time to complete the project and put together all of the project's different components, but the experience was quite fun, and it inspired me to take Introduction to Electrical and Computer Engineering.
                     </div>
-                    <div class="images">
-                        
-                    </div>
                   </div>
             </div>
         </div>
@@ -509,7 +485,6 @@ a:active {
         </div>
       </div>
       <div id="collapse9" class="panel-collapse collapse in">
-        
         <div class="panel-body" style="margin-left: 25px; margin-right: 25px; padding-right: 10vw;">
             <div class="group">
                 <div class="text">
@@ -522,16 +497,15 @@ a:active {
                     Eventually we presented our findings at the Intel International Science and Engineering Fair (ISEF) where we placed 3rd in the Physics and Astronomy category! 
                     You can learn more about what we built from <a href="https://www.triwnews.com/featured/marvin-ridge-high-seniors-win-third-place-in-international-science-competition/">this article</a> in the local paper. Also, the poster we displayed at ISEF is shown below!
                 </div>
-                <div class="images">
-                  <video style="width: 30vw; height: 30vh" controls>
-                      <source src="videos/IntelAwards.mp4" type="video/mp4">
-                  </video>
+              <div class="media-content">
+                <video controls>
+                  <source src="videos/IntelAwards.mp4" type="video/mp4">
+                </video>
+                <br>
+                <iframe src="videos/isef_leftPanel.pdf"></iframe>
+                <iframe src="videos/isef_middlePanel.pdf"></iframe>
+                <iframe src="videos/isef_rightPanel.pdf"></iframe>
               </div>
-                <div style="margin-left: 15%; padding-top: 5vh;">
-                  <iframe src="videos/isef_leftPanel.pdf" style="width: 15vw; height: 30vh"></iframe>
-                  <iframe src="videos/isef_middlePanel.pdf" style="width: 22.5vw; height: 30vh"></iframe>
-                  <iframe src="videos/isef_rightPanel.pdf" style="width: 15vw; height: 30vh"></iframe>
-                </div>
               </div>
           </div>
       </div>
